@@ -2,8 +2,17 @@
 using System.Collections;
 using Prime31.StateKit;
 
+enum GameSpeed : int
+{
+    Slow,
+    Medium,
+    Fast
+}
+
 public class GameManager : MonoBehaviour
 {
+    GameSpeed gameSpeed = GameSpeed.Slow;
+
     SKStateMachine<GameManager> stateMachine;
 
 	// Use this for initialization
