@@ -9,7 +9,7 @@ enum GameSpeed : int
     Fast
 }
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<MonoBehaviour>
 {
     GameSpeed gameSpeed = GameSpeed.Slow;
 
