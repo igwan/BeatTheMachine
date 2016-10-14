@@ -1,0 +1,3 @@
+[submodule "Assets/StateKit"]
+	path = Assets/StateKit
+	url = git@github.com:prime31/StateKit.git
