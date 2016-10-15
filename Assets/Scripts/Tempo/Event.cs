@@ -8,7 +8,7 @@ public class Event
 	public int delay ;
 	public bool activated ;
 
-	Event(UnityAction action, int delay){
+	public Event(UnityAction action, int delay){
 		this.activated = false;
 		this.delay = delay;
 		this.myEvent = new UnityEvent();
