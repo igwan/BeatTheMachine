@@ -100,5 +100,8 @@ public class PlayerController : MonoBehaviour
 		if (this.mustMove ()) {
 			this.MoveToTarget ();
 		}
+
+		// test
+		this.Walk ();
 	}
 }

@@ -4,7 +4,7 @@ using System.Collections;
 public class BackgroundSegmentController : MonoBehaviour {
 	public MapManager mapManager;
 
-	void OnTriggerExit2D(Collider2D collidingObject)
+	/*void OnTriggerExit2D(Collider2D collidingObject)
 	{
 		if (collidingObject.CompareTag ("MainCamera")) 
 		{
@@ -12,4 +12,5 @@ public class BackgroundSegmentController : MonoBehaviour {
 			Destroy (this);
 		}
 	}
+*/
 }
