@@ -49,7 +49,6 @@ public class InputController : MonoBehaviour
 
     void PostTempoKey()
     {
-       // Debug.Log("PostTempoKey");
         if(!actionHappenedThisTempoKey)
         {
             playerController.Hit();
@@ -68,7 +67,11 @@ public class InputController : MonoBehaviour
 
         for(int i = 0; i < inputActions.Length; i++)
         {
-            actionHappenedThisTempoKey |= ProcessActionIfInTolerance(inputActions[i]);
+            var result = ProcessActionIfInTolerance(inputActions[i]);
+            actionHappenedThisTempoKey |= result;
+
+            if(result)
+                return;
         }
     }
 
@@ -82,6 +85,12 @@ public class InputController : MonoBehaviour
     {
         if(!Input.GetButtonDown(inputAction.button))
             return false;
+
+        if(actionHappenedThisTempoKey)
+        {
+            playerController.Hit();
+            return true;
+        }
 
         if(!mTempo.isInTolerance())
         {
