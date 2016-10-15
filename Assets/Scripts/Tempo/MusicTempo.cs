@@ -106,6 +106,11 @@ public class MusicTempo {
 		this.postTempoKeyEvent.Add (new Event (action,delay));
 	}
 
+    public void addPostToleranceEvent(UnityAction action)
+    {
+        addPostTempoKeyEvent(action, tolerance);
+    }
+
 	public void testPreEvents(){
 		for (int i = 0; i < this.preTempoKeyEvent.Count; i++) {
 			if (!this.preTempoKeyEvent[i].activated && this.currentTempo < this.preTempoKeyEvent [i].delay ) {
@@ -118,8 +123,8 @@ public class MusicTempo {
 	public void testPostEvents(){
 		for (int i = 0; i < this.postTempoKeyEvent.Count; i++) {
 			if (!this.postTempoKeyEvent[i].activated && (this.tempo-this.currentTempo) < this.postTempoKeyEvent [i].delay ) {
-				this.preTempoKeyEvent[i].activated = true;
-				this.preTempoKeyEvent [i].myEvent.Invoke ();
+				this.postTempoKeyEvent[i].activated = true;
+				this.postTempoKeyEvent [i].myEvent.Invoke ();
 
 			}
 		}
