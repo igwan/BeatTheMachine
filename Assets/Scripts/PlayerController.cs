@@ -91,6 +91,7 @@ public class PlayerController : MonoBehaviour
     public void Hit() {
 		//Launch Animation
 		if (vulnerability) {
+			Debug.Log ("Hit");
 			animator.SetTrigger ("Hit");
 			health--;
 
@@ -132,6 +133,4 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 	}
-
-
 }

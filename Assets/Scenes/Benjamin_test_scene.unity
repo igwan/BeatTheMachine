@@ -577,7 +577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelSegments:
-  - {fileID: 197702, guid: 898784bd1aea35745bbbc62ebd467f14, type: 2}
+  - {fileID: 0}
   levelSegmentsWidth: 10
   tileLength: 1
 --- !u!114 &456318317
@@ -936,54 +936,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 898784bd1aea35745bbbc62ebd467f14, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1319867345
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1319867347}
-  - 114: {fileID: 1319867346}
-  m_Layer: 0
-  m_Name: test
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1319867346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1319867345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2c4190725a674c45ac4f099b2dbf510, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StartPointX: 0
-  StartPointY: 0
-  ControlPointX: 0
-  ControlPointY: 50
-  EndPointX: 50
-  EndPointY: 50
-  CurveX: 0
-  CurveY: 0
-  BezierTime: 0
---- !u!4 &1319867347
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1319867345}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
 --- !u!1 &1443915701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,6 +1537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  InvulnerabilityDuration: 1
 --- !u!1001 &2063075193
 Prefab:
   m_ObjectHideFlags: 0

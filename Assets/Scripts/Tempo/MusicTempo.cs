@@ -45,15 +45,6 @@ public class MusicTempo : MonoBehaviour
 	//Tempo Key Event
 	private UnityEvent tempoKeyEvent = new UnityEvent ();
 
-	//Pre Tempo Key Event
-	private List<Event> preTempoKeyEvent = new List<Event>();
-	private List<Event> postTempoKeyEvent = new List<Event>();
-
-	private float beginTime;
-
-
-	//TEMPO
-
     public void ChangeSpeed(int speed)
     {
         ChangeTempo(MusicTempo.GetPeriod(speed));
@@ -79,11 +70,6 @@ public class MusicTempo : MonoBehaviour
 	public void nextTempoSlot(){
 		this.currentTempo = tempo ;
         beforeKeyPoint = false;
-	}
-
-
-	public void startTempo(){
-		this.beginTime = Time.time;
 	}
 
     private bool beforeKeyPoint = true;
@@ -126,47 +112,6 @@ public class MusicTempo : MonoBehaviour
 	public bool isInTolerance(){
 		return isInTolerance2;
 	}
-
-	//Events
-
-	/*
-	//For Observers Pattern
-	public void addTempoKeyEvent(UnityAction action){
-		tempoKeyEvent.AddListener (action);
-	}
-
-	public void addPreTempoKeyEvent(UnityAction action, int delay){
-		this.preTempoKeyEvent.Add (new Event (action,delay));
-	}
-
-	public void addPostTempoKeyEvent(UnityAction action, int delay){
-		this.postTempoKeyEvent.Add (new Event (action,delay));
-	}
-
-    public void addPostToleranceEvent(UnityAction action)
-    {
-        addPostTempoKeyEvent(action, tolerance);
-    }
-
-	public void testPreEvents(){
-		for (int i = 0; i < this.preTempoKeyEvent.Count; i++) {
-			if (!this.preTempoKeyEvent[i].activated && this.currentTempo < this.preTempoKeyEvent [i].delay ) {
-				this.preTempoKeyEvent [i].activated = true;
-				this.preTempoKeyEvent [i].myEvent.Invoke ();
-			}
-		}
-	}
-
-	public void testPostEvents(){
-		for (int i = 0; i < this.postTempoKeyEvent.Count; i++) {
-			if (!this.postTempoKeyEvent[i].activated && (this.tempo-this.currentTempo) < this.postTempoKeyEvent [i].delay ) {            Debug.Log(string.Format("{0} {1} {2}", tempo, currentTempo, postTempoKeyEvent[i].delay));
-				this.postTempoKeyEvent[i].activated = true;
-				this.postTempoKeyEvent [i].myEvent.Invoke ();
-			}
-		}
-	}
-	*/
-
 		
 	//Method to Call in a FixedUpdate Monobehaviour to snap the TempoKeyEvent if we are on a TempoKey
 	public void  tempoProcess() {
