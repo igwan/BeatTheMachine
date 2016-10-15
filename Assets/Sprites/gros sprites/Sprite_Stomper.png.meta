@@ -1,9 +1,12 @@
 fileFormatVersion: 2
 guid: 2315f44a28960f847aa97a502c7db23f
-timeCreated: 1476539568
+timeCreated: 1476540362
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: CleanStomper
+    21300002: BloodyStomper
+    21300004: Sprite_Stomper_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,7 +52,40 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: CleanStomper
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BloodyStomper
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 18
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Sprite_Stomper_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

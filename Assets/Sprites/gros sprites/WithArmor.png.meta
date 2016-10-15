@@ -1,9 +1,81 @@
 fileFormatVersion: 2
 guid: d09351f36a5843f4bbb00ec0cc997f06
-timeCreated: 1476539670
+timeCreated: 1476540831
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: WithArmor_0
+    21300002: WithArmor_1
+    21300004: WithArmor_2
+    21300006: WithArmor_3
+    21300008: WithArmor_4
+    21300010: WithArmor_5
+    21300012: WithArmor_6
+    21300014: WithArmor_7
+    21300016: WithArmor_8
+    21300018: WithArmor_9
+    21300020: WithArmor_10
+    21300022: WithArmor_11
+    21300024: WithArmor_14
+    21300026: WithArmor_15
+    21300028: WithArmor_16
+    21300030: WithArmor_17
+    21300032: WithArmor_18
+    21300034: WithArmor_19
+    21300036: WithArmor_20
+    21300038: WithArmor_21
+    21300040: WithArmor_22
+    21300042: WithArmor_23
+    21300044: WithArmor_24
+    21300046: WithArmor_25
+    21300048: WithArmor_28
+    21300050: WithArmor_29
+    21300052: WithArmor_30
+    21300054: WithArmor_31
+    21300056: WithArmor_32
+    21300058: WithArmor_33
+    21300060: WithArmor_34
+    21300062: WithArmor_35
+    21300064: WithArmor_36
+    21300066: WithArmor_37
+    21300068: WithArmor_38
+    21300070: WithArmor_39
+    21300072: WithArmor_42
+    21300074: WithArmor_43
+    21300076: WithArmor_44
+    21300078: WithArmor_45
+    21300080: WithArmor_46
+    21300082: WithArmor_47
+    21300084: WithArmor_48
+    21300086: WithArmor_49
+    21300088: WithArmor_50
+    21300090: WithArmor_51
+    21300092: WithArmor_52
+    21300094: WithArmor_53
+    21300096: WithArmor_56
+    21300098: WithArmor_57
+    21300100: WithArmor_58
+    21300102: WithArmor_59
+    21300104: WithArmor_60
+    21300106: WithArmor_61
+    21300108: WithArmor_62
+    21300110: WithArmor_63
+    21300112: WithArmor_64
+    21300114: WithArmor_65
+    21300116: WithArmor_66
+    21300118: WithArmor_67
+    21300120: WithArmor_70
+    21300122: WithArmor_71
+    21300124: WithArmor_72
+    21300126: WithArmor_73
+    21300128: WithArmor_74
+    21300130: WithArmor_75
+    21300132: WithArmor_76
+    21300134: WithArmor_77
+    21300136: WithArmor_78
+    21300138: WithArmor_79
+    21300140: WithArmor_80
+    21300142: WithArmor_81
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +102,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +110,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +121,1394 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: WithArmor_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 55}
+        - {x: -17, y: 55}
+        - {x: -29, y: 44}
+        - {x: -29, y: -27}
+        - {x: -25, y: -55}
+        - {x: 17, y: -55}
+        - {x: 20, y: -47}
+        - {x: 23, y: -19}
+        - {x: 23, y: 39}
+    - name: WithArmor_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 55}
+        - {x: -17, y: 55}
+        - {x: -29, y: 44}
+        - {x: -29, y: -27}
+        - {x: -25, y: -55}
+        - {x: 17, y: -55}
+        - {x: 20, y: -47}
+        - {x: 23, y: -19}
+        - {x: 23, y: 39}
+    - name: WithArmor_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 52}
+        - {x: -29, y: 38}
+        - {x: -29, y: -42}
+        - {x: -14, y: -55}
+        - {x: 21, y: -55}
+        - {x: 23, y: -49}
+        - {x: 23, y: 52}
+    - name: WithArmor_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 52}
+        - {x: -29, y: 38}
+        - {x: -29, y: -42}
+        - {x: -14, y: -55}
+        - {x: 21, y: -55}
+        - {x: 23, y: -49}
+        - {x: 23, y: 52}
+    - name: WithArmor_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 52}
+        - {x: -29, y: 28}
+        - {x: -29, y: -7}
+        - {x: -15, y: -55}
+        - {x: 25, y: -55}
+        - {x: 26, y: -53}
+        - {x: 26, y: 35}
+        - {x: 19, y: 52}
+    - name: WithArmor_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 52}
+        - {x: -29, y: 28}
+        - {x: -29, y: -7}
+        - {x: -15, y: -55}
+        - {x: 25, y: -55}
+        - {x: 26, y: -53}
+        - {x: 26, y: 35}
+        - {x: 19, y: 52}
+    - name: WithArmor_6
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 52}
+        - {x: -29, y: 38}
+        - {x: -29, y: -42}
+        - {x: -14, y: -55}
+        - {x: 21, y: -55}
+        - {x: 23, y: -49}
+        - {x: 23, y: 52}
+    - name: WithArmor_7
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 52}
+        - {x: -29, y: 38}
+        - {x: -29, y: -42}
+        - {x: -14, y: -55}
+        - {x: 21, y: -55}
+        - {x: 23, y: -49}
+        - {x: 23, y: 52}
+    - name: WithArmor_8
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 55}
+        - {x: -17, y: 55}
+        - {x: -29, y: 44}
+        - {x: -29, y: -27}
+        - {x: -25, y: -55}
+        - {x: 17, y: -55}
+        - {x: 20, y: -47}
+        - {x: 23, y: -19}
+        - {x: 23, y: 39}
+    - name: WithArmor_9
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 55}
+        - {x: -17, y: 55}
+        - {x: -29, y: 44}
+        - {x: -29, y: -27}
+        - {x: -25, y: -55}
+        - {x: 17, y: -55}
+        - {x: 20, y: -47}
+        - {x: 23, y: -19}
+        - {x: 23, y: 39}
+    - name: WithArmor_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -24, y: 31}
+        - {x: -29, y: 18}
+        - {x: -29, y: -9}
+        - {x: -14, y: -55}
+        - {x: 17, y: -55}
+        - {x: 23, y: -12}
+        - {x: 23, y: 39}
+        - {x: 20, y: 55}
+    - name: WithArmor_11
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -24, y: 31}
+        - {x: -29, y: 18}
+        - {x: -29, y: -9}
+        - {x: -14, y: -55}
+        - {x: 17, y: -55}
+        - {x: 23, y: -12}
+        - {x: 23, y: 39}
+        - {x: 20, y: 55}
+    - name: WithArmor_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 52}
+        - {x: -29, y: 32}
+        - {x: -29, y: -30}
+        - {x: -25, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: 23}
+        - {x: 21, y: 52}
+    - name: WithArmor_15
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 52}
+        - {x: -29, y: 32}
+        - {x: -29, y: -30}
+        - {x: -25, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: 23}
+        - {x: 21, y: 52}
+    - name: WithArmor_16
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 12}
+        - {x: 20, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 29}
+        - {x: -29, y: -42}
+        - {x: -26, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -28}
+        - {x: 25, y: -26}
+        - {x: 30, y: -21}
+    - name: WithArmor_17
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 12}
+        - {x: 20, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 29}
+        - {x: -29, y: -42}
+        - {x: -26, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -28}
+        - {x: 25, y: -26}
+        - {x: 30, y: -21}
+    - name: WithArmor_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 12}
+        - {x: 20, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 29}
+        - {x: -29, y: -42}
+        - {x: -26, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -28}
+        - {x: 25, y: -26}
+        - {x: 30, y: -21}
+    - name: WithArmor_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 12}
+        - {x: 20, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 29}
+        - {x: -29, y: -42}
+        - {x: -26, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -28}
+        - {x: 25, y: -26}
+        - {x: 30, y: -21}
+    - name: WithArmor_20
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 12}
+        - {x: 20, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 29}
+        - {x: -29, y: -42}
+        - {x: -26, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -28}
+        - {x: 25, y: -26}
+        - {x: 30, y: -21}
+    - name: WithArmor_21
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 12}
+        - {x: 20, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 29}
+        - {x: -29, y: -42}
+        - {x: -26, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -28}
+        - {x: 25, y: -26}
+        - {x: 30, y: -21}
+    - name: WithArmor_22
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 12}
+        - {x: 20, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 29}
+        - {x: -29, y: -42}
+        - {x: -26, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -28}
+        - {x: 25, y: -26}
+        - {x: 30, y: -21}
+    - name: WithArmor_23
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 12}
+        - {x: 20, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 29}
+        - {x: -29, y: -42}
+        - {x: -26, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -28}
+        - {x: 25, y: -26}
+        - {x: 30, y: -21}
+    - name: WithArmor_24
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -24, y: 31}
+        - {x: -29, y: 18}
+        - {x: -29, y: -9}
+        - {x: -14, y: -55}
+        - {x: 17, y: -55}
+        - {x: 23, y: -12}
+        - {x: 23, y: 39}
+        - {x: 20, y: 55}
+    - name: WithArmor_25
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -24, y: 31}
+        - {x: -29, y: 18}
+        - {x: -29, y: -9}
+        - {x: -14, y: -55}
+        - {x: 17, y: -55}
+        - {x: 23, y: -12}
+        - {x: 23, y: 39}
+        - {x: 20, y: 55}
+    - name: WithArmor_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 55}
+        - {x: -29, y: 44}
+        - {x: -29, y: -31}
+        - {x: -26, y: -55}
+        - {x: 17, y: -55}
+        - {x: 23, y: -11}
+        - {x: 23, y: 39}
+        - {x: 20, y: 55}
+    - name: WithArmor_29
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 55}
+        - {x: -29, y: 44}
+        - {x: -29, y: -31}
+        - {x: -26, y: -55}
+        - {x: 17, y: -55}
+        - {x: 23, y: -11}
+        - {x: 23, y: 39}
+        - {x: 20, y: 55}
+    - name: WithArmor_30
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 55}
+        - {x: -29, y: 36}
+        - {x: -29, y: -46}
+        - {x: -27, y: -55}
+        - {x: 21, y: -55}
+        - {x: 23, y: -38}
+        - {x: 23, y: 51}
+        - {x: 22, y: 55}
+    - name: WithArmor_31
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 55}
+        - {x: -29, y: 36}
+        - {x: -29, y: -46}
+        - {x: -27, y: -55}
+        - {x: 21, y: -55}
+        - {x: 23, y: -38}
+        - {x: 23, y: 51}
+        - {x: 22, y: 55}
+    - name: WithArmor_32
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 55}
+        - {x: -14, y: 53}
+        - {x: -29, y: 20}
+        - {x: -29, y: -48}
+        - {x: -28, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 43}
+        - {x: 19, y: 55}
+    - name: WithArmor_33
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 55}
+        - {x: -14, y: 53}
+        - {x: -29, y: 20}
+        - {x: -29, y: -48}
+        - {x: -28, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 43}
+        - {x: 19, y: 55}
+    - name: WithArmor_34
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -29, y: 19}
+        - {x: -29, y: -29}
+        - {x: -25, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 47}
+        - {x: 20, y: 55}
+    - name: WithArmor_35
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -29, y: 19}
+        - {x: -29, y: -29}
+        - {x: -25, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 47}
+        - {x: 20, y: 55}
+    - name: WithArmor_36
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 55}
+        - {x: -29, y: 44}
+        - {x: -29, y: -55}
+        - {x: 21, y: -55}
+        - {x: 23, y: -34}
+        - {x: 23, y: 55}
+    - name: WithArmor_37
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 55}
+        - {x: -29, y: 44}
+        - {x: -29, y: -55}
+        - {x: 21, y: -55}
+        - {x: 23, y: -34}
+        - {x: 23, y: 55}
+    - name: WithArmor_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -24, y: 31}
+        - {x: -29, y: 18}
+        - {x: -29, y: -9}
+        - {x: -14, y: -55}
+        - {x: 17, y: -55}
+        - {x: 23, y: -12}
+        - {x: 23, y: 39}
+        - {x: 20, y: 55}
+    - name: WithArmor_39
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -24, y: 31}
+        - {x: -29, y: 18}
+        - {x: -29, y: -9}
+        - {x: -14, y: -55}
+        - {x: 17, y: -55}
+        - {x: 23, y: -12}
+        - {x: 23, y: 39}
+        - {x: 20, y: 55}
+    - name: WithArmor_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -29, y: 19}
+        - {x: -29, y: -21}
+        - {x: -22, y: -55}
+        - {x: 23, y: -55}
+        - {x: 26, y: -43}
+        - {x: 26, y: 20}
+        - {x: 22, y: 55}
+    - name: WithArmor_43
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -29, y: 19}
+        - {x: -29, y: -21}
+        - {x: -22, y: -55}
+        - {x: 23, y: -55}
+        - {x: 26, y: -43}
+        - {x: 26, y: 20}
+        - {x: 22, y: 55}
+    - name: WithArmor_44
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 55}
+        - {x: -29, y: 18}
+        - {x: -29, y: -41}
+        - {x: -28, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 34}
+        - {x: 23, y: 55}
+    - name: WithArmor_45
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 55}
+        - {x: -29, y: 18}
+        - {x: -29, y: -41}
+        - {x: -28, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 34}
+        - {x: 23, y: 55}
+    - name: WithArmor_46
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 55}
+        - {x: -29, y: 44}
+        - {x: -29, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 8}
+        - {x: 22, y: 55}
+    - name: WithArmor_47
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 55}
+        - {x: -29, y: 44}
+        - {x: -29, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 8}
+        - {x: 22, y: 55}
+    - name: WithArmor_48
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 55}
+        - {x: -29, y: 19}
+        - {x: -29, y: -32}
+        - {x: -26, y: -54}
+        - {x: -15, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 20}
+        - {x: 22, y: 55}
+    - name: WithArmor_49
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 55}
+        - {x: -29, y: 19}
+        - {x: -29, y: -32}
+        - {x: -26, y: -54}
+        - {x: -15, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 20}
+        - {x: 22, y: 55}
+    - name: WithArmor_50
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 55}
+        - {x: -29, y: 19}
+        - {x: -29, y: -21}
+        - {x: -22, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: 55}
+    - name: WithArmor_51
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 55}
+        - {x: -29, y: 19}
+        - {x: -29, y: -21}
+        - {x: -22, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: 55}
+    - name: WithArmor_52
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -24, y: 31}
+        - {x: -29, y: 18}
+        - {x: -29, y: -9}
+        - {x: -14, y: -55}
+        - {x: 17, y: -55}
+        - {x: 23, y: -12}
+        - {x: 23, y: 39}
+        - {x: 20, y: 55}
+    - name: WithArmor_53
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -24, y: 31}
+        - {x: -29, y: 18}
+        - {x: -29, y: -9}
+        - {x: -14, y: -55}
+        - {x: 17, y: -55}
+        - {x: 23, y: -12}
+        - {x: 23, y: 39}
+        - {x: 20, y: 55}
+    - name: WithArmor_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 49}
+        - {x: -29, y: 18}
+        - {x: -29, y: -45}
+        - {x: -15, y: -55}
+        - {x: 17, y: -55}
+        - {x: 23, y: -50}
+        - {x: 23, y: 49}
+    - name: WithArmor_57
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 49}
+        - {x: -29, y: 18}
+        - {x: -29, y: -45}
+        - {x: -15, y: -55}
+        - {x: 17, y: -55}
+        - {x: 23, y: -50}
+        - {x: 23, y: 49}
+    - name: WithArmor_58
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: 49}
+        - {x: -12, y: 49}
+        - {x: -14, y: 47}
+        - {x: -27, y: 18}
+        - {x: -29, y: 14}
+        - {x: -29, y: -19}
+        - {x: -23, y: -54}
+        - {x: 26, y: -54}
+        - {x: 26, y: 37}
+        - {x: 20, y: 47}
+    - name: WithArmor_59
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: 49}
+        - {x: -12, y: 49}
+        - {x: -14, y: 47}
+        - {x: -27, y: 18}
+        - {x: -29, y: 14}
+        - {x: -29, y: -19}
+        - {x: -23, y: -54}
+        - {x: 26, y: -54}
+        - {x: 26, y: 37}
+        - {x: 20, y: 47}
+    - name: WithArmor_60
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 49}
+        - {x: -14, y: 47}
+        - {x: -27, y: 18}
+        - {x: -29, y: 13}
+        - {x: -29, y: -51}
+        - {x: 27, y: -51}
+        - {x: 30, y: -33}
+        - {x: 30, y: 24}
+        - {x: 20, y: 49}
+    - name: WithArmor_61
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 49}
+        - {x: -14, y: 47}
+        - {x: -27, y: 18}
+        - {x: -29, y: 13}
+        - {x: -29, y: -51}
+        - {x: 27, y: -51}
+        - {x: 30, y: -33}
+        - {x: 30, y: 24}
+        - {x: 20, y: 49}
+    - name: WithArmor_62
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 49}
+        - {x: -29, y: 18}
+        - {x: -29, y: -27}
+        - {x: -16, y: -54}
+        - {x: 23, y: -54}
+        - {x: 23, y: 49}
+    - name: WithArmor_63
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 49}
+        - {x: -29, y: 18}
+        - {x: -29, y: -27}
+        - {x: -16, y: -54}
+        - {x: 23, y: -54}
+        - {x: 23, y: 49}
+    - name: WithArmor_64
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 46}
+        - {x: -29, y: 32}
+        - {x: -29, y: -52}
+        - {x: -28, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 46}
+    - name: WithArmor_65
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 46}
+        - {x: -29, y: 32}
+        - {x: -29, y: -52}
+        - {x: -28, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 46}
+    - name: WithArmor_66
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -24, y: 31}
+        - {x: -29, y: 18}
+        - {x: -29, y: -9}
+        - {x: -14, y: -55}
+        - {x: 17, y: -55}
+        - {x: 23, y: -12}
+        - {x: 23, y: 39}
+        - {x: 20, y: 55}
+    - name: WithArmor_67
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -24, y: 31}
+        - {x: -29, y: 18}
+        - {x: -29, y: -9}
+        - {x: -14, y: -55}
+        - {x: 17, y: -55}
+        - {x: 23, y: -12}
+        - {x: 23, y: 39}
+        - {x: 20, y: 55}
+    - name: WithArmor_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 52}
+        - {x: -29, y: 25}
+        - {x: -29, y: -26}
+        - {x: -21, y: -55}
+        - {x: 23, y: -55}
+        - {x: 29, y: -29}
+        - {x: 29, y: 0}
+        - {x: 20, y: 52}
+    - name: WithArmor_71
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 52}
+        - {x: -29, y: 25}
+        - {x: -29, y: -26}
+        - {x: -21, y: -55}
+        - {x: 23, y: -55}
+        - {x: 29, y: -29}
+        - {x: 29, y: 0}
+        - {x: 20, y: 52}
+    - name: WithArmor_72
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 49}
+        - {x: -29, y: 6}
+        - {x: -29, y: -55}
+        - {x: 28, y: -55}
+        - {x: 29, y: -46}
+        - {x: 29, y: 19}
+        - {x: 19, y: 49}
+    - name: WithArmor_73
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 49}
+        - {x: -29, y: 6}
+        - {x: -29, y: -55}
+        - {x: 28, y: -55}
+        - {x: 29, y: -46}
+        - {x: 29, y: 19}
+        - {x: 19, y: 49}
+    - name: WithArmor_74
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 49}
+        - {x: -29, y: 19}
+        - {x: -29, y: -17}
+        - {x: -27, y: -26}
+        - {x: -18, y: -21}
+        - {x: -15, y: -18}
+        - {x: -20, y: -24}
+        - {x: -29, y: -44}
+        - {x: -29, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 40}
+        - {x: 28, y: 49}
+    - name: WithArmor_75
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 49}
+        - {x: -29, y: 19}
+        - {x: -29, y: -17}
+        - {x: -27, y: -26}
+        - {x: -18, y: -21}
+        - {x: -15, y: -18}
+        - {x: -20, y: -24}
+        - {x: -29, y: -44}
+        - {x: -29, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 40}
+        - {x: 28, y: 49}
+    - name: WithArmor_76
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 49}
+        - {x: -29, y: 19}
+        - {x: -29, y: -17}
+        - {x: -27, y: -26}
+        - {x: -18, y: -21}
+        - {x: -15, y: -18}
+        - {x: -20, y: -24}
+        - {x: -29, y: -44}
+        - {x: -29, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 12}
+        - {x: 20, y: 49}
+    - name: WithArmor_77
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 49}
+        - {x: -29, y: 19}
+        - {x: -29, y: -17}
+        - {x: -27, y: -26}
+        - {x: -18, y: -21}
+        - {x: -15, y: -18}
+        - {x: -20, y: -24}
+        - {x: -29, y: -44}
+        - {x: -29, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 12}
+        - {x: 20, y: 49}
+    - name: WithArmor_78
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 49}
+        - {x: -29, y: 35}
+        - {x: -29, y: -55}
+        - {x: 30, y: -55}
+        - {x: 30, y: 12}
+        - {x: 15, y: 49}
+    - name: WithArmor_79
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 49}
+        - {x: -29, y: 35}
+        - {x: -29, y: -55}
+        - {x: 30, y: -55}
+        - {x: 30, y: 12}
+        - {x: 15, y: 49}
+    - name: WithArmor_80
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 18}
+        - {x: -23, y: -55}
+        - {x: 30, y: -55}
+        - {x: 30, y: -25}
+        - {x: 17, y: 48}
+        - {x: 14, y: 55}
+        - {x: -8, y: 55}
+        - {x: -21, y: 52}
+    - name: WithArmor_81
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: -55}
+        - {x: -25, y: -55}
+        - {x: -25, y: -46}
+        - {x: -27, y: -44}
+        - {x: -30, y: -44}
+      - - {x: -23, y: 18}
+        - {x: -23, y: -55}
+        - {x: 30, y: -55}
+        - {x: 30, y: -25}
+        - {x: 17, y: 48}
+        - {x: 14, y: 55}
+        - {x: -8, y: 55}
+        - {x: -21, y: 52}
     outline: []
   spritePackingTag: 
   userData: 
