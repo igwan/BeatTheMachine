@@ -30,6 +30,7 @@ public class InputController : MonoBehaviour
     float doubleClickDelay = 0.3f;
 
     bool actionHappenedThisTempoKey;
+    bool missedAction;
 
 	void Start()
     {
@@ -43,14 +44,22 @@ public class InputController : MonoBehaviour
         };
 
         mTempo = SoundManager.Instance.musicTempo;
-        mTempo.addPostToleranceEvent(PostTempoKey);
+		mTempo.AddEndEvent(PostTempoKey);
+        mTempo.AddBeginEvent(ResetActionHappened);
 	}
+
+    void ResetActionHappened()
+    {
+        actionHappenedThisTempoKey = false;
+    }
 
     void PostTempoKey()
     {
-       // Debug.Log("PostTempoKey");
         if(!actionHappenedThisTempoKey)
+        {
             playerController.Hit();
+            missedAction = true;
+        }
 
         actionHappenedThisTempoKey = false;
     }
@@ -64,7 +73,11 @@ public class InputController : MonoBehaviour
 
         for(int i = 0; i < inputActions.Length; i++)
         {
-            actionHappenedThisTempoKey |= ProcessActionIfInTolerance(inputActions[i]);
+            var result = ProcessActionIfInTolerance(inputActions[i]);
+            actionHappenedThisTempoKey |= result;
+
+            if(result)
+                return;
         }
     }
 
@@ -79,9 +92,10 @@ public class InputController : MonoBehaviour
         if(!Input.GetButtonDown(inputAction.button))
             return false;
 
-        if(!mTempo.isInToleranceNow())
+        if(actionHappenedThisTempoKey || !mTempo.isInTolerance())
         {
             playerController.Hit();
+            return true;
         }
 
         if(inputAction.doubleClick)
