@@ -1,25 +1,44 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+
+public class InputAction
+{
+    public string button;
+    public Action action;
+    public bool doubleClick;
+
+    public InputAction(string button, Action action, bool doubleClick = false)
+    {
+        this.button = button;
+        this.action = action;
+        this.doubleClick = doubleClick;
+    }
+}
 
 [RequireComponent(typeof(PlayerController))]
 public class InputController : MonoBehaviour
 {
     PlayerController playerController;
 	MusicTempo mTempo;
+    InputAction[] inputActions;
 
-    Dictionary<string, Action> actions;
+    InputAction engagedAction;
+
+    float doubleClickDelay = 0.3f;
 
 	void Start()
     {
         playerController = GetComponent<PlayerController>();
-        actions = new Dictionary<string, Action>()
+
+        inputActions = new InputAction[]
         {
-            { "Jump", playerController.Jump },
-            { "Stop", playerController.Stop },
-            { "Walk", playerController.Walk },
-            { "Sprint", playerController.Sprint }
+            new InputAction("Jump", playerController.Jump),
+            new InputAction("Stop", playerController.Stop),
+            new InputAction("Walk", playerController.Walk),
+            new InputAction("Walk", playerController.Sprint, true)
         };
 
         mTempo = SoundManager.Instance.musicTempo;
@@ -27,20 +46,52 @@ public class InputController : MonoBehaviour
 
     void ProcessActions()
     {
-        foreach(string inputName in actions.Keys)
+        if(engagedAction != null)
         {
-            if(Input.GetButtonDown(inputName))
+            ProcessAction(engagedAction);
+        }
+
+        for(int i = 0; i < inputActions.Length; i++)
+        {
+            ProcessActionIfInTolerance(inputActions[i]);
+        }
+    }
+
+    void ProcessAction(InputAction inputAction)
+    {
+        if(Input.GetButtonDown(inputAction.button))
+            inputAction.action();
+    }
+
+    void ProcessActionIfInTolerance(InputAction inputAction)
+    {
+        if(Input.GetButtonDown(inputAction.button))
+        {
+            if(!mTempo.isInToleranceNow())
             {
-                if(!mTempo.isInToleranceNow())
-                    Debug.Log("missed");
+                playerController.Hit();
+                Debug.Log("missed");
+            }
+            else
+            {
+                if(inputAction.doubleClick)
+                {
+                    engagedAction = inputAction;
+                    StartCoroutine(DisengageAction());
+                }
                 else
-                    actions[inputName]();
+                    inputAction.action();
             }
         }
     }
 
-	// Update is called once per frame
+    IEnumerator DisengageAction()
+    {
+        yield return new WaitForSeconds(doubleClickDelay);
+        engagedAction = null;
+    }
 
+	// Update is called once per frame
 	void Update ()
     {
 		if (Input.GetKeyDown ("space") && mTempo.isInToleranceNow ()) {
