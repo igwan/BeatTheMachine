@@ -1,7 +1,81 @@
 fileFormatVersion: 2
 guid: df9b3740fa8641a44a2d4064c5aa8db8
+timeCreated: 1476529613
+licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: SpriteSheet_WithArmor_0
+    21300002: SpriteSheet_WithArmor_1
+    21300004: SpriteSheet_WithArmor_2
+    21300006: SpriteSheet_WithArmor_3
+    21300008: SpriteSheet_WithArmor_4
+    21300010: SpriteSheet_WithArmor_5
+    21300012: SpriteSheet_WithArmor_6
+    21300014: SpriteSheet_WithArmor_7
+    21300016: SpriteSheet_WithArmor_8
+    21300018: SpriteSheet_WithArmor_9
+    21300020: SpriteSheet_WithArmor_10
+    21300022: SpriteSheet_WithArmor_11
+    21300024: SpriteSheet_WithArmor_14
+    21300026: SpriteSheet_WithArmor_15
+    21300028: SpriteSheet_WithArmor_16
+    21300030: SpriteSheet_WithArmor_17
+    21300032: SpriteSheet_WithArmor_18
+    21300034: SpriteSheet_WithArmor_19
+    21300036: SpriteSheet_WithArmor_20
+    21300038: SpriteSheet_WithArmor_21
+    21300040: SpriteSheet_WithArmor_22
+    21300042: SpriteSheet_WithArmor_23
+    21300044: SpriteSheet_WithArmor_24
+    21300046: SpriteSheet_WithArmor_25
+    21300048: SpriteSheet_WithArmor_28
+    21300050: SpriteSheet_WithArmor_29
+    21300052: SpriteSheet_WithArmor_30
+    21300054: SpriteSheet_WithArmor_31
+    21300056: SpriteSheet_WithArmor_32
+    21300058: SpriteSheet_WithArmor_33
+    21300060: SpriteSheet_WithArmor_34
+    21300062: SpriteSheet_WithArmor_35
+    21300064: SpriteSheet_WithArmor_36
+    21300066: SpriteSheet_WithArmor_37
+    21300068: SpriteSheet_WithArmor_38
+    21300070: SpriteSheet_WithArmor_39
+    21300072: SpriteSheet_WithArmor_42
+    21300074: SpriteSheet_WithArmor_43
+    21300076: SpriteSheet_WithArmor_44
+    21300078: SpriteSheet_WithArmor_45
+    21300080: SpriteSheet_WithArmor_46
+    21300082: SpriteSheet_WithArmor_47
+    21300084: SpriteSheet_WithArmor_48
+    21300086: SpriteSheet_WithArmor_49
+    21300088: SpriteSheet_WithArmor_50
+    21300090: SpriteSheet_WithArmor_51
+    21300092: SpriteSheet_WithArmor_52
+    21300094: SpriteSheet_WithArmor_53
+    21300096: SpriteSheet_WithArmor_56
+    21300098: SpriteSheet_WithArmor_57
+    21300100: SpriteSheet_WithArmor_58
+    21300102: SpriteSheet_WithArmor_59
+    21300104: SpriteSheet_WithArmor_60
+    21300106: SpriteSheet_WithArmor_61
+    21300108: SpriteSheet_WithArmor_62
+    21300110: SpriteSheet_WithArmor_63
+    21300112: SpriteSheet_WithArmor_64
+    21300114: SpriteSheet_WithArmor_65
+    21300116: SpriteSheet_WithArmor_66
+    21300118: SpriteSheet_WithArmor_67
+    21300120: SpriteSheet_WithArmor_70
+    21300122: SpriteSheet_WithArmor_71
+    21300124: SpriteSheet_WithArmor_72
+    21300126: SpriteSheet_WithArmor_73
+    21300128: SpriteSheet_WithArmor_74
+    21300130: SpriteSheet_WithArmor_75
+    21300132: SpriteSheet_WithArmor_76
+    21300134: SpriteSheet_WithArmor_77
+    21300136: SpriteSheet_WithArmor_78
+    21300138: SpriteSheet_WithArmor_79
+    21300140: SpriteSheet_WithArmor_80
+    21300142: SpriteSheet_WithArmor_81
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -28,26 +102,818 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: SpriteSheet_WithArmor_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_3
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_6
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_7
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_8
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_9
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_11
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_15
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_16
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_17
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_18
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_19
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_20
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_21
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_23
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_24
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_25
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_29
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_30
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_31
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_32
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_33
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_34
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_35
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_36
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_37
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_38
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_39
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_43
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_44
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_45
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_46
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_47
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_48
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_49
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_50
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_51
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_52
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_53
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_57
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_58
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_59
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_60
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_61
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_62
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_63
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_64
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_65
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_66
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_67
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_71
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_72
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_73
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_74
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_75
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_76
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_77
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_78
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_79
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_80
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_WithArmor_81
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

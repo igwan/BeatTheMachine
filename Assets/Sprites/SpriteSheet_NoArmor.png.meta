@@ -1,9 +1,81 @@
 fileFormatVersion: 2
 guid: 31b08d50c84d604488fe5396c57ea0de
-timeCreated: 1476528802
+timeCreated: 1476530278
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: NudeStopV1_1
+    21300002: NudeStopV1_2
+    21300004: NudeStopV1_3
+    21300006: NudeStopV1_4
+    21300008: NudeStopV1_5
+    21300010: NudeStopV1_6
+    21300012: NudeStopV1_7
+    21300014: NudeStopV1_8
+    21300016: NudeStopV1_9
+    21300018: NudeStopV1_10
+    21300020: NudeStopV1_11
+    21300022: NudeStopV1_12
+    21300024: NudeStopV2_1
+    21300026: NudeStopV2_2
+    21300028: NudeStopV2_3
+    21300030: NudeStopV2_4
+    21300032: NudeStopV2_5
+    21300034: NudeStopV2_6
+    21300036: NudeStopV2_7
+    21300038: NudeStopV2_8
+    21300040: NudeStopV2_9
+    21300042: NudeStopV2_10
+    21300044: NudeStopV2_11
+    21300046: NudeStopV2_12
+    21300048: Nudewalk_1
+    21300050: Nudewalk_2
+    21300052: Nudewalk_3
+    21300054: Nudewalk_4
+    21300056: Nudewalk_5
+    21300058: Nudewalk_6
+    21300060: Nudewalk_7
+    21300062: Nudewalk_8
+    21300064: Nudewalk_9
+    21300066: Nudewalk_10
+    21300068: Nudewalk_11
+    21300070: Nudewalk_12
+    21300072: NudeRun_1
+    21300074: NudeRun_2
+    21300076: NudeRun_3
+    21300078: NudeRun_4
+    21300080: NudeRun_5
+    21300082: NudeRun_6
+    21300084: NudeRun_7
+    21300086: NudeRun_8
+    21300088: NudeRun_9
+    21300090: NudeRun_10
+    21300092: NudeRun_11
+    21300094: NudeRun_12
+    21300096: NudeJump_1
+    21300098: NudeJump_2
+    21300100: NudeJump_3
+    21300102: NudeJump_4
+    21300104: NudeJump_5
+    21300106: NudeJump_6
+    21300108: NudeJump_7
+    21300110: NudeJump_8
+    21300112: NudeJump_9
+    21300114: NudeJump_10
+    21300116: NudeJump_11
+    21300118: NudeJump_12
+    21300120: NudeDie_1
+    21300122: NudeDie_2
+    21300124: NudeDie_3
+    21300126: NudeDie_4
+    21300128: NudeDie_5
+    21300130: NudeDie_6
+    21300132: NudeDie_7
+    21300134: NudeDie_8
+    21300136: NudeDie_9
+    21300138: NudeDie_10
+    21300140: NudeDie_11
+    21300142: NudeDie_12
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,26 +102,818 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: NudeStopV1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV1_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV1_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV1_4
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV1_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV1_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV1_7
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV1_8
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV1_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV1_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV1_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV1_12
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 185
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV2_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV2_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV2_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV2_4
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV2_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV2_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV2_7
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV2_8
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV2_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV2_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV2_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeStopV2_12
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 148
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Nudewalk_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Nudewalk_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Nudewalk_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Nudewalk_4
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Nudewalk_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Nudewalk_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Nudewalk_7
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Nudewalk_8
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Nudewalk_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Nudewalk_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Nudewalk_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Nudewalk_12
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 111
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeRun_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeRun_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeRun_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeRun_4
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeRun_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeRun_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeRun_7
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeRun_8
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 72
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeRun_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeRun_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeRun_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeRun_12
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 74
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeJump_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeJump_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeJump_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeJump_4
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeJump_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeJump_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeJump_7
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeJump_8
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeJump_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeJump_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeJump_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeJump_12
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 37
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeDie_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeDie_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeDie_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeDie_4
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeDie_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeDie_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeDie_7
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeDie_8
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeDie_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeDie_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeDie_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: NudeDie_12
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
