@@ -10,8 +10,11 @@ public class SoundManager : Singleton<SoundManager>
 
     AudioSource audioSource;
 
+	public MusicTempo musicTempo ;
+
     void Awake()
     {
+		musicTempo = new MusicTempo ();
         audioSource = GetComponent<AudioSource>();
         SetSpeed(0);
     }
@@ -22,6 +25,8 @@ public class SoundManager : Singleton<SoundManager>
             return;
 
         audioSource.clip = nextClip;
+
+		musicTempo.startTempo ();
 
         InvokeRepeating("Play", 0f, audioSource.clip.length);
     }
@@ -45,4 +50,8 @@ public class SoundManager : Singleton<SoundManager>
 
         audioSource.Play();
     }
+		
+	void FixedUpdate(){
+		musicTempo.tempoProcess() ;
+	}
 }

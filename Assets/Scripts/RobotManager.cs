@@ -3,10 +3,12 @@ using System.Collections;
 
 public class RobotManager : MonoBehaviour {
 
-
+	private MusicTempo mTempo ;
+	public int delay ;
 
 	void Start () {
-		SoundManager soundManager = FindObjectOfType<SoundManager> ();
+		mTempo = SoundManager.Instance.musicTempo;
+		mTempo.addPreTempoKeyEvent ();
 	}
 	
 	void Update () {
