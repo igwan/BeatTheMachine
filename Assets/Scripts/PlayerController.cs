@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 
     int health = 1;
 
+
     void Awake()
     {
         animator = GetComponent<Animator>();
@@ -26,12 +27,16 @@ public class PlayerController : MonoBehaviour
 
 	private Vector3 targetPosition ;
 
+	private bool vulnerability;
+
+	private float TimerVulnerability = 2f;
 
 	void Start(){
+		vulnerability = true;
 		this.distance = MapManager.Instance.tileLength;
 		targetPosition = this.transform.position;
 	}
-
+		
 	private bool mustMove(){
 		return this.transform.position != this.targetPosition;
 	}
@@ -39,45 +44,59 @@ public class PlayerController : MonoBehaviour
 	public void MoveToTarget(){
 		float step = speed * Time.deltaTime;
 		transform.position = Vector3.MoveTowards (transform.position, targetPosition, step);
+
 	}
 
 	public void Walk(){
 		//set Objectif 
 		targetPosition = transform.position + new Vector3(distance,0,0);
 		//Launch Animation
+		animator.SetTrigger("Walk");
 		Debug.Log("Walk");
 	}
 
     public void Jump()
     {
         Debug.Log("Jump");
+		//Launch Animation
+		animator.SetTrigger("Jump");
     }
 
     public void Sprint()
     {
         Debug.Log("Sprint");
+		//Launch Animation
+		animator.SetTrigger("Sprint");
     }
 
     public void Stop()
     {
         Debug.Log("Stop");
+		//Launch Animation
+		animator.SetTrigger("Stop");
 
     }
 
+    public void Hit() {
+		//Debug.Log("Hit");
+		//Launch Animation
+		if (!vulnerability) {
+			animator.SetTrigger ("Hit");
+			health--;
 
-    public void Hit()
-    {
-        health--;
-
-		Debug.Log("Hit " + health);
-        if(health < 0)
-        {
-            Die.Invoke();
-        }
-
+			if (health < 0) {
+				Die.Invoke ();
+			}
+		}
     }
 
 	void FixedUpdate(){
+		if (vulnerability) {
+			this.TimerVulnerability -= Time.deltaTime;
+			if (this.TimerVulnerability < 0) {
+				vulnerability = false;
+			}
+		}
 		if (this.mustMove ()) {
 			this.MoveToTarget ();
 		}
