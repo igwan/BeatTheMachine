@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
 	public void MoveToTarget(){
 		float step = speed * Time.deltaTime;
 		transform.position = Vector3.MoveTowards (transform.position, targetPosition, step);
+
 	}
 
 	public void Walk(){
@@ -75,7 +76,6 @@ public class PlayerController : MonoBehaviour
 		animator.SetTrigger("Stop");
 
     }
-
 
     public void Hit() {
 		//Debug.Log("Hit");
