@@ -2,8 +2,9 @@
 using UnityEngine.Events;
 using System.Collections;
 
-public class InputController : MonoBehaviour {
-
+[RequireComponent(typeof(PlayerController))]
+public class InputController : MonoBehaviour
+{
 	MusicTempo mTempo ;
 
 	void Start(){
