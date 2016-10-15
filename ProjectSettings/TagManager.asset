@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - FlexRobot
+  - CameraBackgroundCollider
+  - CameraCrowdColliderRow1
+  - CameraCrowdColliderRow2
+  - CameraCrowdColliderRow3
+  - CameraFrontCollider
   layers:
   - Default
   - TransparentFX
