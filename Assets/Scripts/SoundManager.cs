@@ -2,7 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(AudioSource))]
-public class SoundManager : MonoBehaviour
+public class SoundManager : Singleton<SoundManager>
 {
     [SerializeField] AudioClip[] Clips;
 
@@ -16,19 +16,22 @@ public class SoundManager : MonoBehaviour
         SetSpeed(0);
     }
 
-    void StartGameMusic()
+    public void StartGameMusic()
     {
         if(nextClip == null)
             return;
 
-        AudioSource.clip = nextClip;
+        audioSource.clip = nextClip;
 
         InvokeRepeating("Play", 0f, audioSource.clip.length);
     }
 
-    public void SetSpeed(GameSpeed speed)
+    public void SetSpeed(int speed)
     {
-        nextClip = Clips[(int)speed];
+        if(Clips.Length < speed + 1)
+            return;
+
+        nextClip = Clips[speed];
     }
 
     void Play()
