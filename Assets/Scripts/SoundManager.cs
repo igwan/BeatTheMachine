@@ -26,6 +26,7 @@ public class SoundManager : Singleton<SoundManager>
             return;
 
         audioSource.clip = nextClip;
+        nextClip = null;
 
 		musicTempo.startTempo ();
 
