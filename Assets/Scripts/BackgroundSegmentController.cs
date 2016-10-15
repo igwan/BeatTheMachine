@@ -2,14 +2,14 @@
 using System.Collections;
 
 public class BackgroundSegmentController : MonoBehaviour {
+	public MapManager mapManager;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	void OnTriggerExit2D(Collider2D collidingObject)
+	{
+		if (collidingObject.CompareTag ("MainCamera")) 
+		{
+			mapManager.AddNextLevelSegment (transform.localPosition);
+			Destroy (this);
+		}
 	}
 }
