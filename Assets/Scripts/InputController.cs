@@ -39,8 +39,7 @@ public class InputController : MonoBehaviour
         {
             new InputAction("Jump", playerController.Jump),
             new InputAction("Stop", playerController.Stop),
-            new InputAction("Walk", playerController.Walk),
-            new InputAction("Walk", playerController.Sprint, true)
+            new InputAction("Walk", playerController.Walk)
         };
 
         mTempo = SoundManager.Instance.musicTempo;
@@ -83,8 +82,6 @@ public class InputController : MonoBehaviour
         if(!mTempo.isInToleranceNow())
         {
             playerController.Hit();
-            Debug.Log("missed");
-            return false;
         }
 
         if(inputAction.doubleClick)

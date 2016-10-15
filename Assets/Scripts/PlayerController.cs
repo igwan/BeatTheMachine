@@ -67,9 +67,9 @@ public class PlayerController : MonoBehaviour
 
     public void Hit()
     {
-		Debug.Log("Hit");
         health--;
 
+		Debug.Log("Hit " + health);
         if(health < 0)
         {
             Die.Invoke();
