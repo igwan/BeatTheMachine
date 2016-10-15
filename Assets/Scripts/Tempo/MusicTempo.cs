@@ -5,8 +5,8 @@ using System.Collections.Generic;
 
 
 //This class must be instantiate when the tempo begin
-public class MusicTempo {
-
+public class MusicTempo : MonoBehaviour
+{
 
 	/*
 	  VOCABULARY :
@@ -18,8 +18,8 @@ public class MusicTempo {
                              tolerance
 	 */
 
-	//Constructor
-	public MusicTempo(){
+    void Start()
+    {
 		this.currentTempo = this.tempo; 
 	}
 
@@ -162,4 +162,9 @@ public class MusicTempo {
         if(isTolerancePassed())
             nextTempoTolerance();
 	}
+
+    void FixedUpdate()
+    {
+        tempoProcess();
+    }
 }

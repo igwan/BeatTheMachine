@@ -2,6 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(AudioSource))]
+[RequireComponent(typeof(MusicTempo))]
 public class SoundManager : Singleton<SoundManager>
 {
     [SerializeField] AudioClip[] Clips;
@@ -10,11 +11,11 @@ public class SoundManager : Singleton<SoundManager>
 
     AudioSource audioSource;
 
-	public MusicTempo musicTempo ;
+	public MusicTempo musicTempo;
 
     void Awake()
     {
-		musicTempo = new MusicTempo ();
+        musicTempo = GetComponent<MusicTempo>();
         audioSource = GetComponent<AudioSource>();
         SetSpeed(0);
     }
@@ -50,8 +51,4 @@ public class SoundManager : Singleton<SoundManager>
 
         audioSource.Play();
     }
-		
-	void FixedUpdate(){
-		musicTempo.tempoProcess() ;
-	}
 }
