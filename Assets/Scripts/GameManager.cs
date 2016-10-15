@@ -1,23 +1,22 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using System.Collections;
 using Prime31.StateKit;
 
-enum GameSpeed : int
-{
-    Slow,
-    Medium,
-    Fast
-}
-
 public class GameManager : Singleton<MonoBehaviour>
 {
-    GameSpeed gameSpeed = GameSpeed.Slow;
+    public UnityEvent EndGameEvent = new UnityEvent();
+
+    int gameSpeed;
 
     SKStateMachine<GameManager> stateMachine;
+
+    MusicTempo musicTempo;
 
 	// Use this for initialization
 	void Start ()
     {
+        musicTempo = new MusicTempo();
         CreateStateMachine();
 	}
 
@@ -33,5 +32,12 @@ public class GameManager : Singleton<MonoBehaviour>
         stateMachine.addState(new GameState.PreGame());
         stateMachine.addState(new GameState.Game());
         stateMachine.addState(new GameState.PostGame());
+    }
+
+    public void SetSpeed(int speed)
+    {
+        gameSpeed = speed;
+        soundManager.Instance.SetSpeed(speed);
+        musicTempo.ChangeSpeed(speed);
     }
 }
