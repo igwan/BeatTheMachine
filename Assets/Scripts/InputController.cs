@@ -40,7 +40,9 @@ public class InputController : MonoBehaviour
         {
             new InputAction("Jump", playerController.Jump),
             new InputAction("Stop", playerController.Stop),
-            new InputAction("Walk", playerController.Walk)
+            new InputAction("Walk", playerController.Walk),
+			new InputAction("Dash", playerController.Dash)
+
         };
 
         mTempo = SoundManager.Instance.musicTempo;
