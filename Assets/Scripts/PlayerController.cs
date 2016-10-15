@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public class DeathEvent : UnityEvent {};
     public DeathEvent Die = new DeathEvent();
 
-    bool hasArmor = true;
+    int health = 1;
 
 	//speed
 	public float speed = 1f ;
@@ -58,11 +58,9 @@ public class PlayerController : MonoBehaviour
 
     public void Hit()
     {
-        if(hasArmor)
-        {
-            hasArmor = false;
-        }
-        else
+        health--;
+
+        if(health < 0)
         {
             Die.Invoke();
         }
