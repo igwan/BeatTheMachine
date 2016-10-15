@@ -5,8 +5,8 @@ using System.Collections.Generic;
 
 
 //This class must be instantiate when the tempo begin
-public class MusicTempo {
-
+public class MusicTempo : MonoBehaviour
+{
 
 	/*
 	  VOCABULARY :
@@ -18,8 +18,8 @@ public class MusicTempo {
                              tolerance
 	 */
 
-	//Constructor
-	public MusicTempo(){
+    void Start()
+    {
 		this.currentTempo = this.tempo; 
 	}
 
@@ -74,11 +74,24 @@ public class MusicTempo {
 	}
 		
 	public void nextTempoSlot(){
+		this.currentTempo = tempo ;
+	}
+
+    public void nextTempoTolerance()
+    {
 		for (int i = 0; i < this.preTempoKeyEvent.Count; i++) {
 			this.preTempoKeyEvent[i].activated = false;
 		}
-		this.currentTempo = tempo ;
-	}
+
+		for (int i = 0; i < this.postTempoKeyEvent.Count; i++) {
+			this.postTempoKeyEvent[i].activated = false;
+		}
+    }
+
+    public bool isTolerancePassed()
+    {
+        return tempo - currentTempo  < tolerance;
+    }
 
 	// function to know if at a specific Time we are in the tolerance slot
 	// how to use it : isInTolerance((int)((Time.time-beginTime)*1000))
@@ -106,6 +119,11 @@ public class MusicTempo {
 		this.postTempoKeyEvent.Add (new Event (action,delay));
 	}
 
+    public void addPostToleranceEvent(UnityAction action)
+    {
+        addPostTempoKeyEvent(action, tolerance);
+    }
+
 	public void testPreEvents(){
 		for (int i = 0; i < this.preTempoKeyEvent.Count; i++) {
 			if (!this.preTempoKeyEvent[i].activated && this.currentTempo < this.preTempoKeyEvent [i].delay ) {
@@ -118,8 +136,9 @@ public class MusicTempo {
 	public void testPostEvents(){
 		for (int i = 0; i < this.postTempoKeyEvent.Count; i++) {
 			if (!this.postTempoKeyEvent[i].activated && (this.tempo-this.currentTempo) < this.postTempoKeyEvent [i].delay ) {
-				this.preTempoKeyEvent[i].activated = true;
-				this.preTempoKeyEvent [i].myEvent.Invoke ();
+                Debug.Log("testPostEvents");
+				this.postTempoKeyEvent[i].activated = true;
+				this.postTempoKeyEvent [i].myEvent.Invoke ();
 
 			}
 		}
@@ -139,5 +158,13 @@ public class MusicTempo {
 		}
 		testPreEvents ();
 		testPostEvents ();
+
+        if(isTolerancePassed())
+            nextTempoTolerance();
 	}
+
+    void FixedUpdate()
+    {
+        tempoProcess();
+    }
 }
