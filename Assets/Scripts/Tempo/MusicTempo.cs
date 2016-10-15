@@ -139,7 +139,6 @@ public class MusicTempo : MonoBehaviour
 	public void testPostEvents(){
 		for (int i = 0; i < this.postTempoKeyEvent.Count; i++) {
 			if (!this.postTempoKeyEvent[i].activated && (this.tempo-this.currentTempo) < this.postTempoKeyEvent [i].delay ) {
-                Debug.Log(string.Format("{0} {1} {2}", tempo, currentTempo, postTempoKeyEvent[i].delay));
 				this.postTempoKeyEvent[i].activated = true;
 				this.postTempoKeyEvent [i].myEvent.Invoke ();
 
@@ -155,10 +154,11 @@ public class MusicTempo : MonoBehaviour
 	//Method to Call in a FixedUpdate Monobehaviour to snap the TempoKeyEvent if we are on a TempoKey
 	public void  tempoProcess() {
 		UpdateCurrentTempo ();
-		if (isTempoKey ()) {
-            Debug.Log("tempokey");
+		if (isTempoKey ())
+        {
 			nextTempoSlot ();
 			tempoKeyEvent.Invoke ();
+            toleranceDone = false;
 		}
 		testPreEvents ();
 		testPostEvents ();
