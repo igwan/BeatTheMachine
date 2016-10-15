@@ -116,7 +116,7 @@ public class MusicTempo {
 	}
 
 	public void testPostEvents(){
-		for (int i = 0; i < this.preTempoKeyEvent.Count; i++) {
+		for (int i = 0; i < this.postTempoKeyEvent.Count; i++) {
 			if (!this.postTempoKeyEvent[i].activated && (this.tempo-this.currentTempo) < this.postTempoKeyEvent [i].delay ) {
 				this.preTempoKeyEvent[i].activated = true;
 				this.preTempoKeyEvent [i].myEvent.Invoke ();
