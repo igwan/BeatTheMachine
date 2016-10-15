@@ -12,10 +12,8 @@ public class InputController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown ("space") && mTempo.isInToleranceNow ()) {
-			Debug.Log ("gg");
-		} else if(Input.GetKeyDown ("space")){
-			Debug.Log ("noob");
+		if (Input.GetKeyDown ("right")) {
+			Debug.Log ("toto");
 		}
 	}
 }

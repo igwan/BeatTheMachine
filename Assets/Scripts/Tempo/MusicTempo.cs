@@ -9,11 +9,11 @@ public class MusicTempo {
 	/*
 	  VOCABULARY :
 
-	 		|---------------[-----|-----]----------------|
-	  		^					  ^----------------------^				
- 		tempo key					     tempo slot						  
- 							^-----------^
-							  tolerance
+            |---------------[-----|-----]----------------|
+            ^                     ^----------------------^				
+ 	    tempo key                         tempo slot						  
+                            ^-----------^
+                             tolerance
 	 */
 
 	//Constructor
