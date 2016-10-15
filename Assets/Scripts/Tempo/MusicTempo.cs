@@ -22,6 +22,13 @@ public class MusicTempo {
 		this.beginTime = Time.time;
 	}
 
+    // FIXME: mettre les vrai valeurs
+    [SerializeField] static int[] tempos = { 70, 90, 110, 130, 150, 170 };
+
+    public static int GetPeriod(int speed)
+    {
+        return (tempos[speed] / 60) * 1000;
+    }
 
 	//unit : millliseconds
 	//tempo time between two key point
@@ -42,6 +49,11 @@ public class MusicTempo {
 	public void ChangeTempo(int tempo){
 		this.tempo = tempo ;
 	}
+
+    public void ChangeSpeed(int speed)
+    {
+        ChangeTempo(MusicTempo.GetPeriod(speed));
+    }
 
 	//put this function in a FixedUpdate to decremente time on the tempo
 	public void UpdateCurrentTempo(){
