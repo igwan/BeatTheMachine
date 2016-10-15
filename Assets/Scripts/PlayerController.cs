@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+
 	//speed
 	public float speed = 1f ;
 
@@ -66,6 +67,7 @@ public class PlayerController : MonoBehaviour
 
     public void Hit()
     {
+		Debug.Log("Hit");
         health--;
 
         if(health < 0)
@@ -79,7 +81,5 @@ public class PlayerController : MonoBehaviour
 		if (this.mustMove ()) {
 			this.MoveToTarget ();
 		}
-		if (Input.anyKeyDown)
-			Walk ();
 	}
 }

@@ -36,7 +36,7 @@ public class MusicTempo {
 	public int tempo = 2000;
 
 	//tolerance between the key input and the tempo
-	public int tolerance = 100 ;
+	public int tolerance = 250 ;
 
 	//current Tempo 
 	private int currentTempo;
@@ -45,12 +45,9 @@ public class MusicTempo {
 	//Tempo Key Event
 	private UnityEvent tempoKeyEvent = new UnityEvent ();
 
-	//Pre or Post Tempo Key Event
-	private List<UnityEvent> preTempoKeyEvent = new List<UnityEvent>();
-	//List milisecondes
-	private List<int> preTempoKeyEventDelay = new List<int>();
-	//List milisecondes
-	private List<bool> preTempoKeyEventActivated = new List<bool>();
+	//Pre Tempo Key Event
+	private List<Event> preTempoKeyEvent = new List<Event>();
+	private List<Event> postTempoKeyEvent = new List<Event>();
 
 	private float beginTime;
 
@@ -66,17 +63,19 @@ public class MusicTempo {
 
 	//put this function in a FixedUpdate to decremente time on the tempo
 	public void UpdateCurrentTempo(){
-		currentTempo -= (int)(Time.deltaTime*1000) ;
+		//currentTempo -= (int)(Time.deltaTime*1000) ;
+		currentTempo = tempo - (int)(Time.time*1000) % tempo ;
+		//Debug.Log (currentTempo);
 	}
 
 	//return a bool if it is the tempo Key
 	public bool isTempoKey(){
-		return this.currentTempo < 0;
+		return this.currentTempo < 50;
 	}
 		
 	public void nextTempoSlot(){
 		for (int i = 0; i < this.preTempoKeyEvent.Count; i++) {
-			this.preTempoKeyEventActivated [i] = false;
+			this.preTempoKeyEvent[i].activated = false;
 		}
 		this.currentTempo = tempo ;
 	}
@@ -100,18 +99,28 @@ public class MusicTempo {
 	}
 
 	public void addPreTempoKeyEvent(UnityAction action, int delay){
-		UnityEvent preEvent = new UnityEvent ();
-		preEvent.AddListener (action);
-		this.preTempoKeyEvent.Add (preEvent);
-		this.preTempoKeyEventDelay.Add (delay);
-		this.preTempoKeyEventActivated.Add (false);
+		this.preTempoKeyEvent.Add (new Event (action,delay));
 	}
 
-	public void testEvents(){
+	public void addPostTempoKeyEvent(UnityAction action, int delay){
+		this.postTempoKeyEvent.Add (new Event (action,delay));
+	}
+
+	public void testPreEvents(){
 		for (int i = 0; i < this.preTempoKeyEvent.Count; i++) {
-			if (!this.preTempoKeyEventActivated[i] && this.currentTempo < this.preTempoKeyEventDelay [i]) {
-				this.preTempoKeyEventActivated [i] = true;
-				this.preTempoKeyEvent [i].Invoke ();
+			if (!this.preTempoKeyEvent[i].activated && this.currentTempo < this.preTempoKeyEvent [i].delay ) {
+				this.preTempoKeyEvent [i].activated = true;
+				this.preTempoKeyEvent [i].myEvent.Invoke ();
+			}
+		}
+	}
+
+	public void testPostEvents(){
+		for (int i = 0; i < this.preTempoKeyEvent.Count; i++) {
+			if (!this.postTempoKeyEvent[i].activated && (this.tempo-this.currentTempo) < this.postTempoKeyEvent [i].delay ) {
+				this.preTempoKeyEvent[i].activated = true;
+				this.preTempoKeyEvent [i].myEvent.Invoke ();
+
 			}
 		}
 	}
@@ -128,6 +137,7 @@ public class MusicTempo {
 			nextTempoSlot ();
 			tempoKeyEvent.Invoke ();
 		}
-		testEvents ();
+		testPreEvents ();
+		testPostEvents ();
 	}
 }

@@ -70,7 +70,6 @@ public class InputController : MonoBehaviour
             if(!mTempo.isInToleranceNow())
             {
                 playerController.Hit();
-                Debug.Log("missed");
             }
             else
             {
