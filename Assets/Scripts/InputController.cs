@@ -45,7 +45,13 @@ public class InputController : MonoBehaviour
 
         mTempo = SoundManager.Instance.musicTempo;
 		mTempo.AddEndEvent(PostTempoKey);
+        mTempo.AddBeginEvent(ResetActionHappened);
 	}
+
+    void ResetActionHappened()
+    {
+        actionHappenedThisTempoKey = false;
+    }
 
     void PostTempoKey()
     {
@@ -86,17 +92,10 @@ public class InputController : MonoBehaviour
         if(!Input.GetButtonDown(inputAction.button))
             return false;
 
-        if(actionHappenedThisTempoKey)
+        if(actionHappenedThisTempoKey || !mTempo.isInTolerance())
         {
             playerController.Hit();
             return true;
-        }
-
-        if(!mTempo.isInTolerance())
-        {
-            if(!missedAction)
-                playerController.Hit();
-            return false;
         }
 
         if(inputAction.doubleClick)

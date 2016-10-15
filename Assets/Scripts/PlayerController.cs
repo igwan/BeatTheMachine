@@ -22,17 +22,16 @@ public class PlayerController : MonoBehaviour
 	//speed
 	public float speed = 1f ;
 
+    public float InvulnerabilityDuration = 1f;
+
 	//distance between Tile 
 	private float distance ;
 
 	private Vector3 targetPosition ;
 
-	private bool vulnerability;
-
-	private float TimerVulnerability = 2f;
+	private bool vulnerability = true;
 
 	void Start(){
-		vulnerability = true;
 		this.distance = MapManager.Instance.tileLength;
 		targetPosition = this.transform.position;
 	}
@@ -78,27 +77,39 @@ public class PlayerController : MonoBehaviour
     }
 
     public void Hit() {
-		Debug.Log("Hit");
 		//Launch Animation
-		if (!vulnerability) {
+		if (vulnerability) {
 			animator.SetTrigger ("Hit");
 			health--;
 
 			if (health < 0) {
 				Die.Invoke ();
 			}
+            else
+            {
+                vulnerability = false;
+                StartCoroutine(StopInvulnerability());
+            }
 		}
     }
 
-	void FixedUpdate(){
-		if (vulnerability) {
-			this.TimerVulnerability -= Time.deltaTime;
-			if (this.TimerVulnerability < 0) {
-				vulnerability = false;
-			}
-		}
-		if (this.mustMove ()) {
-			this.MoveToTarget ();
-		}
-	}
+    IEnumerator StopInvulnerability()
+    {
+        yield return new WaitForSeconds(1f);
+        vulnerability = true;
+    }
+
+//	void FixedUpdate(){
+//		if (!vulnerability) {
+//			this.TimerInvulnerability -= Time.deltaTime;
+//            Debug.Log(TimerInvulnerability);
+//			if (this.TimerInvulnerability < 0) {
+//				vulnerability = true;
+//                TimerInvulnerability = InvulnerabilityDuration;
+//			}
+//		}
+//		if (this.mustMove ()) {
+//			this.MoveToTarget ();
+//		}
+//	}
 }
