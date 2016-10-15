@@ -51,6 +51,8 @@ public class MusicTempo : MonoBehaviour
 
 	private float beginTime;
 
+    private bool toleranceDone;
+
 	//Change the Tempo of the music
 	public void ChangeTempo(int tempo){
 		this.tempo = tempo ;
@@ -90,7 +92,8 @@ public class MusicTempo : MonoBehaviour
 
     public bool isTolerancePassed()
     {
-        return tempo - currentTempo  < tolerance;
+        var result = tempo - currentTempo  < tolerance;
+        return result;
     }
 
 	// function to know if at a specific Time we are in the tolerance slot
@@ -136,10 +139,9 @@ public class MusicTempo : MonoBehaviour
 	public void testPostEvents(){
 		for (int i = 0; i < this.postTempoKeyEvent.Count; i++) {
 			if (!this.postTempoKeyEvent[i].activated && (this.tempo-this.currentTempo) < this.postTempoKeyEvent [i].delay ) {
-                //Debug.Log("testPostEvents");
+            Debug.Log(string.Format("{0} {1} {2}", tempo, currentTempo, postTempoKeyEvent[i].delay));
 				this.postTempoKeyEvent[i].activated = true;
 				this.postTempoKeyEvent [i].myEvent.Invoke ();
-
 			}
 		}
 	}
@@ -153,6 +155,7 @@ public class MusicTempo : MonoBehaviour
 	public void  tempoProcess() {
 		UpdateCurrentTempo ();
 		if (isTempoKey ()) {
+            Debug.Log("tempokey");
 			nextTempoSlot ();
 			tempoKeyEvent.Invoke ();
 		}
@@ -160,7 +163,11 @@ public class MusicTempo : MonoBehaviour
 		testPostEvents ();
 
         if(isTolerancePassed())
-            nextTempoTolerance();
+        {
+            if(!toleranceDone)
+                nextTempoTolerance();
+            toleranceDone = true;
+        }
 	}
 
     void FixedUpdate()

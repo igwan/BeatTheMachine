@@ -11,7 +11,7 @@ public class SoundManager : Singleton<SoundManager>
 
     AudioSource audioSource;
 
-	public MusicTempo musicTempo;
+    [HideInInspector] public MusicTempo musicTempo;
 
     void Awake()
     {

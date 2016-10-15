@@ -11,6 +11,7 @@ namespace GameState
             Debug.Log("Game start");
         #endif
 
+            SoundManager.Instance.musicTempo.enabled = true;
             SoundManager.Instance.StartGameMusic();
             _context.EndGameEvent.AddListener(gameEnd);
         }
