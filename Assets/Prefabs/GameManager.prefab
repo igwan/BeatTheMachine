@@ -11,12 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f2a88baef1284545a651c7976e1e1ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EndGameEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
---- !u!4 &423552
+--- !u!4 &406424
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -27,7 +22,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 6
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -46,7 +41,7 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 423552}
+  - 4: {fileID: 406424}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
