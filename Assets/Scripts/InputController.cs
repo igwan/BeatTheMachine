@@ -29,6 +29,8 @@ public class InputController : MonoBehaviour
 
     float doubleClickDelay = 0.3f;
 
+    bool actionHappenedThisTempoKey;
+
 	void Start()
     {
         playerController = GetComponent<PlayerController>();
@@ -42,7 +44,17 @@ public class InputController : MonoBehaviour
         };
 
         mTempo = SoundManager.Instance.musicTempo;
+        mTempo.addPostToleranceEvent(PostTempoKey);
 	}
+
+    void PostTempoKey()
+    {
+        Debug.Log("PostTempoKey");
+        if(!actionHappenedThisTempoKey)
+            playerController.Hit();
+
+        actionHappenedThisTempoKey = false;
+    }
 
     void ProcessActions()
     {
@@ -53,7 +65,7 @@ public class InputController : MonoBehaviour
 
         for(int i = 0; i < inputActions.Length; i++)
         {
-            ProcessActionIfInTolerance(inputActions[i]);
+            actionHappenedThisTempoKey |= ProcessActionIfInTolerance(inputActions[i]);
         }
     }
 
@@ -63,25 +75,27 @@ public class InputController : MonoBehaviour
             inputAction.action();
     }
 
-    void ProcessActionIfInTolerance(InputAction inputAction)
+    bool ProcessActionIfInTolerance(InputAction inputAction)
     {
-        if(Input.GetButtonDown(inputAction.button))
+        if(!Input.GetButtonDown(inputAction.button))
+            return false;
+
+        if(!mTempo.isInToleranceNow())
         {
-            if(!mTempo.isInToleranceNow())
-            {
-                playerController.Hit();
-            }
-            else
-            {
-                if(inputAction.doubleClick)
-                {
-                    engagedAction = inputAction;
-                    StartCoroutine(DisengageAction());
-                }
-                else
-                    inputAction.action();
-            }
+            playerController.Hit();
+            Debug.Log("missed");
+            return false;
         }
+
+        if(inputAction.doubleClick)
+        {
+            engagedAction = inputAction;
+            StartCoroutine(DisengageAction());
+        }
+        else
+            inputAction.action();
+
+        return true;
     }
 
     IEnumerator DisengageAction()
