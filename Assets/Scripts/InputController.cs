@@ -30,6 +30,7 @@ public class InputController : MonoBehaviour
     float doubleClickDelay = 0.3f;
 
     bool actionHappenedThisTempoKey;
+    bool missedAction;
 
 	void Start()
     {
@@ -50,7 +51,10 @@ public class InputController : MonoBehaviour
     {
        // Debug.Log("PostTempoKey");
         if(!actionHappenedThisTempoKey)
+        {
             playerController.Hit();
+            missedAction = true;
+        }
 
         actionHappenedThisTempoKey = false;
     }
@@ -81,7 +85,9 @@ public class InputController : MonoBehaviour
 
         if(!mTempo.isInToleranceNow())
         {
-            playerController.Hit();
+            if(!missedAction)
+                playerController.Hit();
+            return false;
         }
 
         if(inputAction.doubleClick)
