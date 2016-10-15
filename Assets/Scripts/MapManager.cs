@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MapManager : MonoBehaviour {
+public class MapManager : Singleton<MapManager> {
 
 	public GameObject[] levelSegments;
 	Camera camera;
 	public float levelSegmentsWidth  = 15;
+
+	public float tileLength = 1 ;
 
 	public void AddNextLevelSegment(Vector3 exitingSegmentPosition)
 	{
