@@ -67,22 +67,26 @@ public class MusicTempo : MonoBehaviour
 
 	//put this function in a FixedUpdate to decremente time on the tempo
 	public void UpdateCurrentTempo(){
-		currentTempo = tempo - (int)(Time.time*1000) % tempo ;
+		//currentTempo = tempo - (int)(Time.time*1000) % tempo ;
+        currentTempo -= (int)(Time.deltaTime * 1000);
 	}
 
 	//return a bool if it is the tempo Key
 	public bool isTempoKey(){
-		return this.currentTempo < 50;
+		return this.currentTempo < 0;
 	}
 
 	public void nextTempoSlot(){
 		this.currentTempo = tempo ;
+        beforeKeyPoint = false;
 	}
 
 
 	public void startTempo(){
 		this.beginTime = Time.time;
 	}
+
+    private bool beforeKeyPoint = true;
 
 
 	//TOLERANCE
@@ -111,8 +115,9 @@ public class MusicTempo : MonoBehaviour
 	}
 
 	public void toleranceEnd(){
-		if (isInTolerance2 && (tempo - currentTempo) < tolerance) {
+		if (isInTolerance2 && (tempo - currentTempo) > tolerance && !beforeKeyPoint) {
 			Debug.Log ("fin");
+            beforeKeyPoint = true;
 			isInTolerance2 = false;
 			this.toleranceEndEvent.Invoke ();
 		}
