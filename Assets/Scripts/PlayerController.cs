@@ -2,12 +2,20 @@
 using UnityEngine.Events;
 using System.Collections;
 
+[RequireComponent(typeof(Animator))]
 public class PlayerController : MonoBehaviour
 {
+    Animator animator;
+
     public class DeathEvent : UnityEvent {};
     public DeathEvent Die = new DeathEvent();
 
     int health = 1;
+
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
 	//speed
 	public float speed = 1f ;
