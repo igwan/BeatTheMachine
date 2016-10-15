@@ -1,0 +1,1471 @@
+fileFormatVersion: 2
+guid: 719e0ca2089cff24084364d3ab39eca2
+timeCreated: 1476540994
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: NoArmor_0
+    21300002: NoArmor_1
+    21300004: NoArmor_2
+    21300006: NoArmor_3
+    21300008: NoArmor_4
+    21300010: NoArmor_5
+    21300012: NoArmor_6
+    21300014: NoArmor_7
+    21300016: NoArmor_8
+    21300018: NoArmor_9
+    21300020: NoArmor_10
+    21300022: NoArmor_11
+    21300024: NoArmor_14
+    21300026: NoArmor_15
+    21300028: NoArmor_16
+    21300030: NoArmor_17
+    21300032: NoArmor_18
+    21300034: NoArmor_19
+    21300036: NoArmor_20
+    21300038: NoArmor_21
+    21300040: NoArmor_22
+    21300042: NoArmor_23
+    21300044: NoArmor_24
+    21300046: NoArmor_25
+    21300048: NoArmor_28
+    21300050: NoArmor_29
+    21300052: NoArmor_30
+    21300054: NoArmor_31
+    21300056: NoArmor_32
+    21300058: NoArmor_33
+    21300060: NoArmor_34
+    21300062: NoArmor_35
+    21300064: NoArmor_36
+    21300066: NoArmor_37
+    21300068: NoArmor_38
+    21300070: NoArmor_39
+    21300072: NoArmor_42
+    21300074: NoArmor_43
+    21300076: NoArmor_44
+    21300078: NoArmor_45
+    21300080: NoArmor_46
+    21300082: NoArmor_47
+    21300084: NoArmor_48
+    21300086: NoArmor_49
+    21300088: NoArmor_50
+    21300090: NoArmor_51
+    21300092: NoArmor_52
+    21300094: NoArmor_53
+    21300096: NoArmor_56
+    21300098: NoArmor_57
+    21300100: NoArmor_58
+    21300102: NoArmor_59
+    21300104: NoArmor_60
+    21300106: NoArmor_61
+    21300108: NoArmor_62
+    21300110: NoArmor_63
+    21300112: NoArmor_64
+    21300114: NoArmor_65
+    21300116: NoArmor_66
+    21300118: NoArmor_67
+    21300120: NoArmor_70
+    21300122: NoArmor_71
+    21300124: NoArmor_72
+    21300126: NoArmor_73
+    21300128: NoArmor_74
+    21300130: NoArmor_75
+    21300132: NoArmor_76
+    21300134: NoArmor_77
+    21300136: NoArmor_78
+    21300138: NoArmor_79
+    21300140: NoArmor_80
+    21300142: NoArmor_81
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: NoArmor_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 55}
+        - {x: -20, y: 45}
+        - {x: -20, y: -49}
+        - {x: -19, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 52}
+        - {x: 10, y: 55}
+    - name: NoArmor_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 55}
+        - {x: -20, y: 45}
+        - {x: -20, y: -49}
+        - {x: -19, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 52}
+        - {x: 10, y: 55}
+    - name: NoArmor_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 46}
+        - {x: 10, y: 52}
+        - {x: -16, y: 52}
+        - {x: -23, y: 36}
+        - {x: -23, y: -27}
+        - {x: -14, y: -55}
+        - {x: 18, y: -55}
+        - {x: 20, y: -47}
+    - name: NoArmor_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 46}
+        - {x: 10, y: 52}
+        - {x: -16, y: 52}
+        - {x: -23, y: 36}
+        - {x: -23, y: -27}
+        - {x: -14, y: -55}
+        - {x: 18, y: -55}
+        - {x: 20, y: -47}
+    - name: NoArmor_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 52}
+        - {x: -23, y: -40}
+        - {x: -19, y: -55}
+        - {x: 18, y: -55}
+        - {x: 20, y: -53}
+        - {x: 20, y: 45}
+        - {x: 19, y: 52}
+    - name: NoArmor_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 52}
+        - {x: -23, y: -40}
+        - {x: -19, y: -55}
+        - {x: 18, y: -55}
+        - {x: 20, y: -53}
+        - {x: 20, y: 45}
+        - {x: 19, y: 52}
+    - name: NoArmor_6
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 46}
+        - {x: 10, y: 52}
+        - {x: -16, y: 52}
+        - {x: -23, y: 36}
+        - {x: -23, y: -27}
+        - {x: -14, y: -55}
+        - {x: 18, y: -55}
+        - {x: 20, y: -47}
+    - name: NoArmor_7
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 46}
+        - {x: 10, y: 52}
+        - {x: -16, y: 52}
+        - {x: -23, y: 36}
+        - {x: -23, y: -27}
+        - {x: -14, y: -55}
+        - {x: 18, y: -55}
+        - {x: 20, y: -47}
+    - name: NoArmor_8
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 55}
+        - {x: -20, y: 45}
+        - {x: -20, y: -49}
+        - {x: -19, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 52}
+        - {x: 10, y: 55}
+    - name: NoArmor_9
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 55}
+        - {x: -20, y: 45}
+        - {x: -20, y: -49}
+        - {x: -19, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 52}
+        - {x: 10, y: 55}
+    - name: NoArmor_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 55}
+        - {x: -20, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 49}
+        - {x: 14, y: 55}
+    - name: NoArmor_11
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 555
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 55}
+        - {x: -20, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 49}
+        - {x: 14, y: 55}
+    - name: NoArmor_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 52}
+        - {x: -26, y: 27}
+        - {x: -26, y: -49}
+        - {x: -25, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 36}
+        - {x: 15, y: 52}
+    - name: NoArmor_15
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 52}
+        - {x: -26, y: 27}
+        - {x: -26, y: -49}
+        - {x: -25, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 36}
+        - {x: 15, y: 52}
+    - name: NoArmor_16
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: -36}
+        - {x: -25, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 42}
+        - {x: 28, y: 48}
+        - {x: 26, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 24}
+    - name: NoArmor_17
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: -36}
+        - {x: -25, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 42}
+        - {x: 28, y: 48}
+        - {x: 26, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 24}
+    - name: NoArmor_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: -36}
+        - {x: -25, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 42}
+        - {x: 28, y: 48}
+        - {x: 26, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 24}
+    - name: NoArmor_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: -36}
+        - {x: -25, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 42}
+        - {x: 28, y: 48}
+        - {x: 26, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 24}
+    - name: NoArmor_20
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: -36}
+        - {x: -25, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 42}
+        - {x: 28, y: 48}
+        - {x: 26, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 24}
+    - name: NoArmor_21
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: -36}
+        - {x: -25, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 42}
+        - {x: 28, y: 48}
+        - {x: 26, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 24}
+    - name: NoArmor_22
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: -36}
+        - {x: -25, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 42}
+        - {x: 28, y: 48}
+        - {x: 26, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 24}
+    - name: NoArmor_23
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: -36}
+        - {x: -25, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 42}
+        - {x: 28, y: 48}
+        - {x: 26, y: 49}
+        - {x: -14, y: 49}
+        - {x: -29, y: 24}
+    - name: NoArmor_24
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 55}
+        - {x: -20, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 49}
+        - {x: 14, y: 55}
+    - name: NoArmor_25
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 444
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 55}
+        - {x: -20, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 49}
+        - {x: 14, y: 55}
+    - name: NoArmor_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 55}
+        - {x: -20, y: 43}
+        - {x: -20, y: -45}
+        - {x: -18, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 54}
+        - {x: 15, y: 55}
+    - name: NoArmor_29
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 55}
+        - {x: -20, y: 43}
+        - {x: -20, y: -45}
+        - {x: -18, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 54}
+        - {x: 15, y: 55}
+    - name: NoArmor_30
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 55}
+        - {x: -14, y: 48}
+        - {x: -17, y: 22}
+        - {x: -17, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 53}
+        - {x: 11, y: 55}
+    - name: NoArmor_31
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 55}
+        - {x: -14, y: 48}
+        - {x: -17, y: 22}
+        - {x: -17, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 53}
+        - {x: 11, y: 55}
+    - name: NoArmor_32
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 55}
+        - {x: -20, y: 52}
+        - {x: -20, y: -55}
+        - {x: 22, y: -55}
+        - {x: 23, y: -53}
+        - {x: 23, y: 39}
+        - {x: 18, y: 55}
+    - name: NoArmor_33
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 55}
+        - {x: -20, y: 52}
+        - {x: -20, y: -55}
+        - {x: 22, y: -55}
+        - {x: 23, y: -53}
+        - {x: 23, y: 39}
+        - {x: 18, y: 55}
+    - name: NoArmor_34
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 55}
+        - {x: -20, y: 52}
+        - {x: -20, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 33}
+        - {x: 17, y: 55}
+    - name: NoArmor_35
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 55}
+        - {x: -20, y: 52}
+        - {x: -20, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 33}
+        - {x: 17, y: 55}
+    - name: NoArmor_36
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 48}
+        - {x: 14, y: 55}
+        - {x: -8, y: 55}
+        - {x: -20, y: 52}
+        - {x: -20, y: -55}
+        - {x: 20, y: -55}
+        - {x: 20, y: -49}
+        - {x: 19, y: -47}
+        - {x: 17, y: -18}
+    - name: NoArmor_37
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 48}
+        - {x: 14, y: 55}
+        - {x: -8, y: 55}
+        - {x: -20, y: 52}
+        - {x: -20, y: -55}
+        - {x: 20, y: -55}
+        - {x: 20, y: -49}
+        - {x: 19, y: -47}
+        - {x: 17, y: -18}
+    - name: NoArmor_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 55}
+        - {x: -20, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 49}
+        - {x: 14, y: 55}
+    - name: NoArmor_39
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 333
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 55}
+        - {x: -20, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 49}
+        - {x: 14, y: 55}
+    - name: NoArmor_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 55}
+        - {x: -20, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 42}
+        - {x: 17, y: 55}
+    - name: NoArmor_43
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 55}
+        - {x: -20, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 42}
+        - {x: 17, y: 55}
+    - name: NoArmor_44
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 55}
+        - {x: -26, y: 35}
+        - {x: -26, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: 34}
+        - {x: 16, y: 55}
+    - name: NoArmor_45
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 55}
+        - {x: -26, y: 35}
+        - {x: -26, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: 34}
+        - {x: 16, y: 55}
+    - name: NoArmor_46
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -20, y: 50}
+        - {x: -26, y: -9}
+        - {x: -26, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 55}
+    - name: NoArmor_47
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 55}
+        - {x: -20, y: 50}
+        - {x: -26, y: -9}
+        - {x: -26, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 55}
+    - name: NoArmor_48
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 48}
+        - {x: 14, y: 55}
+        - {x: -20, y: 55}
+        - {x: -20, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -8}
+        - {x: 22, y: -5}
+    - name: NoArmor_49
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 48}
+        - {x: 14, y: 55}
+        - {x: -20, y: 55}
+        - {x: -20, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -8}
+        - {x: 22, y: -5}
+    - name: NoArmor_50
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 55}
+        - {x: -20, y: 52}
+        - {x: -20, y: -47}
+        - {x: -18, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 27}
+        - {x: 15, y: 55}
+    - name: NoArmor_51
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 55}
+        - {x: -20, y: 52}
+        - {x: -20, y: -47}
+        - {x: -18, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 27}
+        - {x: 15, y: 55}
+    - name: NoArmor_52
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 55}
+        - {x: -20, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 49}
+        - {x: 14, y: 55}
+    - name: NoArmor_53
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 222
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 55}
+        - {x: -20, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 49}
+        - {x: 14, y: 55}
+    - name: NoArmor_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 49}
+        - {x: -21, y: 45}
+        - {x: -29, y: 3}
+        - {x: -29, y: -37}
+        - {x: -16, y: -55}
+        - {x: 20, y: -55}
+        - {x: 20, y: 40}
+        - {x: 17, y: 49}
+    - name: NoArmor_57
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 49}
+        - {x: -21, y: 45}
+        - {x: -29, y: 3}
+        - {x: -29, y: -37}
+        - {x: -16, y: -55}
+        - {x: 20, y: -55}
+        - {x: 20, y: 40}
+        - {x: 17, y: 49}
+    - name: NoArmor_58
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: -37}
+        - {x: 4, y: -39}
+        - {x: 4, y: -52}
+        - {x: 6, y: -54}
+        - {x: 26, y: -54}
+        - {x: 26, y: 23}
+        - {x: 20, y: 49}
+        - {x: -10, y: 49}
+        - {x: -19, y: 44}
+        - {x: -20, y: 9}
+        - {x: -20, y: -54}
+        - {x: 0, y: -54}
+        - {x: 2, y: -52}
+        - {x: 2, y: -40}
+    - name: NoArmor_59
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: -37}
+        - {x: 4, y: -39}
+        - {x: 4, y: -52}
+        - {x: 6, y: -54}
+        - {x: 26, y: -54}
+        - {x: 26, y: 23}
+        - {x: 20, y: 49}
+        - {x: -10, y: 49}
+        - {x: -19, y: 44}
+        - {x: -20, y: 9}
+        - {x: -20, y: -54}
+        - {x: 0, y: -54}
+        - {x: 2, y: -52}
+        - {x: 2, y: -40}
+    - name: NoArmor_60
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 49}
+        - {x: -21, y: 46}
+        - {x: -26, y: -2}
+        - {x: -26, y: -51}
+        - {x: 26, y: -51}
+        - {x: 26, y: 49}
+    - name: NoArmor_61
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 49}
+        - {x: -21, y: 46}
+        - {x: -26, y: -2}
+        - {x: -26, y: -51}
+        - {x: 26, y: -51}
+        - {x: 26, y: 49}
+    - name: NoArmor_62
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 49}
+        - {x: -20, y: 46}
+        - {x: -26, y: 31}
+        - {x: -26, y: -21}
+        - {x: -16, y: -54}
+        - {x: 26, y: -54}
+        - {x: 26, y: -7}
+        - {x: 18, y: 49}
+    - name: NoArmor_63
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 49}
+        - {x: -20, y: 46}
+        - {x: -26, y: 31}
+        - {x: -26, y: -21}
+        - {x: -16, y: -54}
+        - {x: 26, y: -54}
+        - {x: 26, y: -7}
+        - {x: 18, y: 49}
+    - name: NoArmor_64
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 49}
+        - {x: -29, y: 31}
+        - {x: -29, y: -39}
+        - {x: -25, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 17}
+        - {x: 16, y: 49}
+    - name: NoArmor_65
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 49}
+        - {x: -29, y: 31}
+        - {x: -29, y: -39}
+        - {x: -25, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 17}
+        - {x: 16, y: 49}
+    - name: NoArmor_66
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 55}
+        - {x: -20, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 49}
+        - {x: 14, y: 55}
+    - name: NoArmor_67
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 111
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 55}
+        - {x: -20, y: -55}
+        - {x: 17, y: -55}
+        - {x: 17, y: 49}
+        - {x: 14, y: 55}
+    - name: NoArmor_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 52}
+        - {x: -26, y: 27}
+        - {x: -26, y: -49}
+        - {x: -25, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 36}
+        - {x: 15, y: 52}
+    - name: NoArmor_71
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 52}
+        - {x: -26, y: 27}
+        - {x: -26, y: -49}
+        - {x: -25, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 36}
+        - {x: 15, y: 52}
+    - name: NoArmor_72
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 49}
+        - {x: -28, y: 47}
+        - {x: -29, y: 39}
+        - {x: -29, y: -12}
+        - {x: -23, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 44}
+        - {x: 18, y: 49}
+    - name: NoArmor_73
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 41}
+        - {x: 28, y: 51}
+        - {x: 23, y: 52}
+        - {x: -16, y: 52}
+        - {x: -29, y: 44}
+        - {x: -29, y: -1}
+        - {x: -24, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -46}
+        - {x: 25, y: -24}
+        - {x: 29, y: 0}
+    - name: NoArmor_74
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 49}
+        - {x: -28, y: 47}
+        - {x: -29, y: 39}
+        - {x: -29, y: -12}
+        - {x: -23, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 44}
+        - {x: 18, y: 49}
+    - name: NoArmor_75
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 41}
+        - {x: 28, y: 51}
+        - {x: 23, y: 52}
+        - {x: -16, y: 52}
+        - {x: -29, y: 44}
+        - {x: -29, y: -1}
+        - {x: -24, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -46}
+        - {x: 25, y: -24}
+        - {x: 29, y: 0}
+    - name: NoArmor_76
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 49}
+        - {x: -28, y: 47}
+        - {x: -29, y: 39}
+        - {x: -29, y: -12}
+        - {x: -23, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 44}
+        - {x: 18, y: 49}
+    - name: NoArmor_77
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 41}
+        - {x: 28, y: 51}
+        - {x: 23, y: 52}
+        - {x: -16, y: 52}
+        - {x: -29, y: 44}
+        - {x: -29, y: -1}
+        - {x: -24, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -46}
+        - {x: 25, y: -24}
+        - {x: 29, y: 0}
+    - name: NoArmor_78
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 49}
+        - {x: -28, y: 47}
+        - {x: -29, y: 39}
+        - {x: -29, y: -12}
+        - {x: -23, y: -55}
+        - {x: 29, y: -55}
+        - {x: 29, y: 44}
+        - {x: 18, y: 49}
+    - name: NoArmor_79
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29, y: 41}
+        - {x: 28, y: 51}
+        - {x: 23, y: 52}
+        - {x: -16, y: 52}
+        - {x: -29, y: 44}
+        - {x: -29, y: -1}
+        - {x: -24, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -46}
+        - {x: 25, y: -24}
+        - {x: 29, y: 0}
+    - name: NoArmor_80
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: -17}
+        - {x: -23, y: -44}
+        - {x: -23, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -38}
+        - {x: 15, y: -17}
+      - - {x: -20, y: -39}
+        - {x: -7, y: -39}
+        - {x: -1, y: -34}
+        - {x: -1, y: -14}
+        - {x: -16, y: -14}
+        - {x: -20, y: -17}
+      - - {x: 13, y: -17}
+        - {x: 13, y: -33}
+        - {x: 19, y: -33}
+        - {x: 23, y: -29}
+        - {x: 23, y: -21}
+        - {x: 19, y: -17}
+    - name: NoArmor_81
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: -14}
+        - {x: -15, y: -15}
+        - {x: -23, y: -37}
+        - {x: -23, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: -22}
+        - {x: 16, y: -14}
+      - - {x: -8, y: -17}
+        - {x: -8, y: -35}
+        - {x: -6, y: -36}
+        - {x: -1, y: -36}
+        - {x: 2, y: -31}
+        - {x: 2, y: -19}
+        - {x: -3, y: -17}
+      - - {x: -17, y: -17}
+        - {x: -20, y: -21}
+        - {x: -20, y: -29}
+        - {x: -16, y: -33}
+        - {x: -10, y: -33}
+        - {x: -10, y: -17}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
