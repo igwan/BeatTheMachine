@@ -136,7 +136,7 @@ public class MusicTempo : MonoBehaviour
 	public void testPostEvents(){
 		for (int i = 0; i < this.postTempoKeyEvent.Count; i++) {
 			if (!this.postTempoKeyEvent[i].activated && (this.tempo-this.currentTempo) < this.postTempoKeyEvent [i].delay ) {
-                Debug.Log("testPostEvents");
+                //Debug.Log("testPostEvents");
 				this.postTempoKeyEvent[i].activated = true;
 				this.postTempoKeyEvent [i].myEvent.Invoke ();
 

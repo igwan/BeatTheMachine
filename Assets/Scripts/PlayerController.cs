@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
 
     public void Hit()
     {
-		Debug.Log("Hit");
+		//Debug.Log("Hit");
         health--;
 
         if(health < 0)

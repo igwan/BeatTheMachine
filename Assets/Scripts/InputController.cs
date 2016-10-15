@@ -49,7 +49,7 @@ public class InputController : MonoBehaviour
 
     void PostTempoKey()
     {
-        Debug.Log("PostTempoKey");
+       // Debug.Log("PostTempoKey");
         if(!actionHappenedThisTempoKey)
             playerController.Hit();
 
