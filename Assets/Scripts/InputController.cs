@@ -43,7 +43,7 @@ public class InputController : MonoBehaviour
         };
 
         mTempo = SoundManager.Instance.musicTempo;
-        mTempo.addPostToleranceEvent(PostTempoKey);
+		mTempo.AddEndEvent(PostTempoKey);
 	}
 
     void PostTempoKey()
@@ -79,7 +79,7 @@ public class InputController : MonoBehaviour
         if(!Input.GetButtonDown(inputAction.button))
             return false;
 
-        if(!mTempo.isInToleranceNow())
+        if(!mTempo.isInTolerance())
         {
             playerController.Hit();
         }

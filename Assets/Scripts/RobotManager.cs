@@ -11,7 +11,8 @@ public class RobotManager : MonoBehaviour {
 
 	void Start () {
 		mTempo = SoundManager.Instance.musicTempo;
-		mTempo.addPreTempoKeyEvent (beginAnimation,delay);
+		//mTempo.addPreTempoKeyEvent (beginAnimation,delay);
+		mTempo.AddBeginEvent(beginAnimation);
 		//FIXME : do properly a Find of all the robots
 		GameObject[] robotstab=  GameObject.FindGameObjectsWithTag("FlexRobot");
 		for (int i = 0; i < robotstab.Length; i++) {

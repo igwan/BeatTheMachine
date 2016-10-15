@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
     }
 
     public void Hit() {
-		//Debug.Log("Hit");
+		Debug.Log("Hit");
 		//Launch Animation
 		if (!vulnerability) {
 			animator.SetTrigger ("Hit");
