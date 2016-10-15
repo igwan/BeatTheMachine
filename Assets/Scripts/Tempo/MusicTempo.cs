@@ -51,64 +51,80 @@ public class MusicTempo : MonoBehaviour
 
 	private float beginTime;
 
-    private bool toleranceDone;
 
-	//Change the Tempo of the music
-	public void ChangeTempo(int tempo){
-		this.tempo = tempo ;
-	}
+	//TEMPO
 
     public void ChangeSpeed(int speed)
     {
         ChangeTempo(MusicTempo.GetPeriod(speed));
     }
 
+
+	//Change the Tempo of the music
+	public void ChangeTempo(int tempo){
+		this.tempo = tempo ;
+	}
+
 	//put this function in a FixedUpdate to decremente time on the tempo
 	public void UpdateCurrentTempo(){
-		//currentTempo -= (int)(Time.deltaTime*1000) ;
 		currentTempo = tempo - (int)(Time.time*1000) % tempo ;
-		//Debug.Log (currentTempo);
 	}
 
 	//return a bool if it is the tempo Key
 	public bool isTempoKey(){
 		return this.currentTempo < 50;
 	}
-		
+
 	public void nextTempoSlot(){
 		this.currentTempo = tempo ;
 	}
 
-    public void nextTempoTolerance()
-    {
-		for (int i = 0; i < this.preTempoKeyEvent.Count; i++) {
-			this.preTempoKeyEvent[i].activated = false;
-		}
 
-		for (int i = 0; i < this.postTempoKeyEvent.Count; i++) {
-			this.postTempoKeyEvent[i].activated = false;
-		}
-    }
-
-    public bool isTolerancePassed()
-    {
-        var result = tempo - currentTempo  < tolerance;
-        return result;
-    }
-
-	// function to know if at a specific Time we are in the tolerance slot
-	// how to use it : isInTolerance((int)((Time.time-beginTime)*1000))
-	public bool isInTolerance(int clickTime){
-		int clickInTempoRef = clickTime % tempo;
-		return clickInTempoRef > (tempo - tolerance) || clickInTempoRef < tolerance  ;
+	public void startTempo(){
+		this.beginTime = Time.time;
 	}
 
 
-	// function to know if (for the currentTime when the function is called) it is in the tolerance slot
-	public bool isInToleranceNow(){
-		return isInTolerance ((int)((Time.time - beginTime) * 1000));
+	//TOLERANCE
+	private bool toleranceDone;
+
+	private bool isInTolerance2 = false ;
+
+	private UnityEvent toleranceBeginEvent = new UnityEvent ();
+
+	private UnityEvent toleranceEndEvent = new UnityEvent ();
+
+	public void AddBeginEvent(UnityAction action){
+		this.toleranceBeginEvent.AddListener (action);
 	}
 
+	public void AddEndEvent(UnityAction action){
+		this.toleranceEndEvent.AddListener (action);
+	}
+
+	public void toleranceBegin(){
+		if(!isInTolerance2 && (currentTempo < tolerance)){
+			Debug.Log ("debut");
+			isInTolerance2 = true ;
+			this.toleranceBeginEvent.Invoke ();
+		}
+	}
+
+	public void toleranceEnd(){
+		if (isInTolerance2 && (tempo - currentTempo) < tolerance) {
+			Debug.Log ("fin");
+			isInTolerance2 = false;
+			this.toleranceEndEvent.Invoke ();
+		}
+	}
+
+	public bool isInTolerance(){
+		return isInTolerance2;
+	}
+
+	//Events
+
+	/*
 	//For Observers Pattern
 	public void addTempoKeyEvent(UnityAction action){
 		tempoKeyEvent.AddListener (action);
@@ -144,11 +160,8 @@ public class MusicTempo : MonoBehaviour
 			}
 		}
 	}
+	*/
 
-	public void startTempo(){
-		this.beginTime = Time.time ;
-	}
-		
 		
 	//Method to Call in a FixedUpdate Monobehaviour to snap the TempoKeyEvent if we are on a TempoKey
 	public void  tempoProcess() {
@@ -159,15 +172,8 @@ public class MusicTempo : MonoBehaviour
 			tempoKeyEvent.Invoke ();
             toleranceDone = false;
 		}
-		testPreEvents ();
-		testPostEvents ();
-
-        if(isTolerancePassed())
-        {
-            if(!toleranceDone)
-                nextTempoTolerance();
-            toleranceDone = true;
-        }
+		toleranceBegin();
+		toleranceEnd ();
 	}
 
     void FixedUpdate()
