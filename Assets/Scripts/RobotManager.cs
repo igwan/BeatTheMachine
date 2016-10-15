@@ -34,4 +34,10 @@ public class RobotManager : MonoBehaviour {
 			pair.Value.SetTrigger ("Flex");
 		}
 	}
+
+	void robotsKill(){
+		foreach (KeyValuePair<GameObject,Animator> pair in robots) {
+			pair.Value.SetTrigger ("Die");
+		}
+	}
 }

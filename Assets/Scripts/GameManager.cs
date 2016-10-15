@@ -11,12 +11,9 @@ public class GameManager : Singleton<GameManager>
 
     SKStateMachine<GameManager> stateMachine;
 
-    MusicTempo musicTempo;
-
 	// Use this for initialization
 	void Start ()
     {
-        musicTempo = new MusicTempo();
         CreateStateMachine();
 	}
 
@@ -38,6 +35,5 @@ public class GameManager : Singleton<GameManager>
     {
         gameSpeed = speed;
         SoundManager.Instance.SetSpeed(speed);
-        musicTempo.ChangeSpeed(speed);
     }
 }
