@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
+using System.Collections.Generic;
+
 
 //This class must be instantiate when the tempo begin
 public class MusicTempo {
@@ -9,17 +11,16 @@ public class MusicTempo {
 	/*
 	  VOCABULARY :
 
-	 		|---------------[-----|-----]----------------|
-	  		^					  ^----------------------^				
- 		tempo key					     tempo slot						  
- 							^-----------^
-							  tolerance
+            |---------------[-----|-----]----------------|
+            ^                     ^----------------------^				
+ 	    tempo key                         tempo slot						  
+                            ^-----------^
+                             tolerance
 	 */
 
 	//Constructor
 	public MusicTempo(){
 		this.currentTempo = this.tempo; 
-		this.beginTime = Time.time;
 	}
 
     // FIXME: mettre les vrai valeurs
@@ -40,8 +41,16 @@ public class MusicTempo {
 	//current Tempo 
 	private int currentTempo;
 
+
 	//Tempo Key Event
 	private UnityEvent tempoKeyEvent = new UnityEvent ();
+
+	//Pre or Post Tempo Key Event
+	private List<UnityEvent> preTempoKeyEvent = new List<UnityEvent>();
+	//List milisecondes
+	private List<int> preTempoKeyEventDelay = new List<int>();
+	//List milisecondes
+	private List<bool> preTempoKeyEventActivated = new List<bool>();
 
 	private float beginTime;
 
@@ -66,6 +75,9 @@ public class MusicTempo {
 	}
 		
 	public void nextTempoSlot(){
+		for (int i = 0; i < this.preTempoKeyEvent.Count; i++) {
+			this.preTempoKeyEventActivated [i] = false;
+		}
 		this.currentTempo = tempo ;
 	}
 
@@ -86,6 +98,28 @@ public class MusicTempo {
 	public void addTempoKeyEvent(UnityAction action){
 		tempoKeyEvent.AddListener (action);
 	}
+
+	public void addPreTempoKeyEvent(UnityAction action, int delay){
+		UnityEvent preEvent = new UnityEvent ();
+		preEvent.AddListener (action);
+		this.preTempoKeyEvent.Add (preEvent);
+		this.preTempoKeyEventDelay.Add (delay);
+		this.preTempoKeyEventActivated.Add (false);
+	}
+
+	public void testEvents(){
+		for (int i = 0; i < this.preTempoKeyEvent.Count; i++) {
+			if (!this.preTempoKeyEventActivated[i] && this.currentTempo < this.preTempoKeyEventDelay [i]) {
+				this.preTempoKeyEventActivated [i] = true;
+				this.preTempoKeyEvent [i].Invoke ();
+			}
+		}
+	}
+
+	public void startTempo(){
+		this.beginTime = Time.time ;
+	}
+		
 		
 	//Method to Call in a FixedUpdate Monobehaviour to snap the TempoKeyEvent if we are on a TempoKey
 	public void  tempoProcess() {

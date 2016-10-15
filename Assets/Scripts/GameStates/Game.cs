@@ -11,7 +11,7 @@ namespace GameState
             Debug.Log("Game start");
         #endif
 
-            _context.soundManager.Instance.StartGameMusic();
+            SoundManager.Instance.StartGameMusic();
             _context.EndGameEvent.AddListener(gameEnd);
         }
 
