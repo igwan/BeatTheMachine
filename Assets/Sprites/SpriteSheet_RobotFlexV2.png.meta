@@ -1,9 +1,17 @@
 fileFormatVersion: 2
 guid: 24d9f67e5791cb34cabf5e948ec721a2
-timeCreated: 1476527766
+timeCreated: 1476530837
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: SpriteSheet_RobotFlexV2_0
+    21300002: SpriteSheet_RobotFlexV2_1
+    21300004: SpriteSheet_RobotFlexV2_2
+    21300006: SpriteSheet_RobotFlexV2_3
+    21300008: SpriteSheet_RobotFlexV2_4
+    21300010: SpriteSheet_RobotFlexV2_5
+    21300012: SpriteSheet_RobotFlexV2_6
+    21300014: SpriteSheet_RobotFlexV2_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +38,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +46,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +57,95 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: SpriteSheet_RobotFlexV2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_RobotFlexV2_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 37
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_RobotFlexV2_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 37
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_RobotFlexV2_3
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 37
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_RobotFlexV2_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_RobotFlexV2_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_RobotFlexV2_6
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SpriteSheet_RobotFlexV2_7
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

@@ -33,7 +33,7 @@ public class MusicTempo {
 
 	//unit : millliseconds
 	//tempo time between two key point
-	public int tempo = 1000;
+	public int tempo = 2000;
 
 	//tolerance between the key input and the tempo
 	public int tolerance = 100 ;
@@ -128,5 +128,6 @@ public class MusicTempo {
 			nextTempoSlot ();
 			tempoKeyEvent.Invoke ();
 		}
+		testEvents ();
 	}
 }
