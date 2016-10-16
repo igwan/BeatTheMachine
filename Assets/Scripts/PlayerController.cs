@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
 
     Animator animator;
 
+    public SpriteRenderer missedHind;
+
     public class DeathEvent : UnityEvent {};
     public DeathEvent Die = new DeathEvent();
 
@@ -147,6 +149,7 @@ public class PlayerController : MonoBehaviour
 		//Launch Animation
 		if (vulnerability) {
 			//Debug.Log ("Hit");
+            ShowMissedHind();
 			animator.SetTrigger ("Hit");
 			health--;
 
@@ -225,4 +228,16 @@ public class PlayerController : MonoBehaviour
 			this.FallToTarget ();
 		}
 	}
+
+    public void ShowMissedHind()
+    {
+        missedHind.enabled = true;
+        StartCoroutine(HideInSeconds(1f));
+    }
+
+    IEnumerator HideInSeconds(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        missedHind.enabled = false;
+    }
 }
