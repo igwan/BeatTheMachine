@@ -10,7 +10,8 @@ namespace GameState
         #if DEBUG
             Debug.Log("PreGame start");
         #endif
-            _context.player.Reset();
+            SoundManager.Instance.PlayMusic(SoundManager.Instance.mainTheme);
+
             // wait a little before
             _machine.changeState<Game>();
         }

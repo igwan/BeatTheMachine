@@ -11,6 +11,7 @@ namespace GameState
         #if DEBUG
             Debug.Log("GameOver start");
         #endif
+            SoundManager.Instance.PlaySound(SoundManager.Instance.gameOver);
             _context.GameOverUI.SetActive(true);
             _context.StartCoroutine(WaitAndRestart(_context.postGameDuration));
         }
@@ -19,6 +20,7 @@ namespace GameState
         {
             yield return new WaitForSeconds(waitTime);
             _context.GameOverUI.SetActive(false);
+            SoundManager.Instance.StopSound();
             _machine.changeState<GameState.IntroScreen>();
         }
 

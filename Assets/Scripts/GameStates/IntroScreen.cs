@@ -10,12 +10,16 @@ namespace GameState
         #if DEBUG
             Debug.Log("IntroScreen start");
         #endif
+            SoundManager.Instance.PlayMusic(SoundManager.Instance.titleScreen);
         }
 
         public override void reason()
         {
-            // test for input before
-            _machine.changeState<PreGame>();
+            if(Input.anyKeyDown())
+            {
+                SoundManager.Instance.StopMusic();
+                _machine.changeState<PreGame>();
+            }
         }
 
         public override void update(float deltaTime)
