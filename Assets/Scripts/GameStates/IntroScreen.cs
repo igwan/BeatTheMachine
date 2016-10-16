@@ -15,7 +15,7 @@ namespace GameState
 
         public override void reason()
         {
-            if(Input.anyKeyDown())
+            if(Input.anyKeyDown)
             {
                 SoundManager.Instance.StopMusic();
                 _machine.changeState<PreGame>();
