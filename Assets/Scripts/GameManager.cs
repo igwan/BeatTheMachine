@@ -5,6 +5,10 @@ using Prime31.StateKit;
 
 public class GameManager : Singleton<GameManager>
 {
+    public GameObject GameOverUI;
+    public float postGameDuration = 3;
+    public PlayerController player;
+
     public UnityEvent EndGameEvent = new UnityEvent();
 
     int gameSpeed;
@@ -28,7 +32,8 @@ public class GameManager : Singleton<GameManager>
         stateMachine = new SKStateMachine<GameManager>(this, new GameState.IntroScreen());
         stateMachine.addState(new GameState.PreGame());
         stateMachine.addState(new GameState.Game());
-        stateMachine.addState(new GameState.PostGame());
+        stateMachine.addState(new GameState.Win());
+        stateMachine.addState(new GameState.GameOver());
     }
 
     public void SetSpeed(int speed)

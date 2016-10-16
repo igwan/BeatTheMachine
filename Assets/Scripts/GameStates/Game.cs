@@ -13,13 +13,13 @@ namespace GameState
 
             SoundManager.Instance.musicTempo.enabled = true;
             SoundManager.Instance.StartGameMusic();
-            _context.EndGameEvent.AddListener(gameEnd);
+            _context.player.Die.AddListener(gameOver);
         }
 
-        void gameEnd()
+        void gameOver()
         {
-            _context.EndGameEvent.RemoveListener(gameEnd);
-            _machine.changeState<PostGame>();
+            _context.player.Die.RemoveListener(gameOver);
+            _machine.changeState<GameOver>();
         }
 
         public override void update(float deltaTime)
