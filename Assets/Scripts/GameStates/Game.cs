@@ -14,12 +14,19 @@ namespace GameState
             SoundManager.Instance.musicTempo.enabled = true;
             SoundManager.Instance.StartGameMusic();
             _context.player.Die.AddListener(gameOver);
+            MapManager.Instance.EndLevel.AddListener(win);
         }
 
         void gameOver()
         {
             _context.player.Die.RemoveListener(gameOver);
             _machine.changeState<GameOver>();
+        }
+
+        void win()
+        {
+            MapManager.Instance.EndLevel.RemoveListener(win);
+            _machine.changeState<Win>();
         }
 
         public override void update(float deltaTime)
