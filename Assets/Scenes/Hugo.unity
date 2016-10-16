@@ -94,7 +94,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 460938, guid: 96bbbed8289eadf47b998e5428044ae6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -20
+      value: -21
       objectReference: {fileID: 0}
     - target: {fileID: 460938, guid: 96bbbed8289eadf47b998e5428044ae6, type: 2}
       propertyPath: m_LocalPosition.y
@@ -168,6 +168,142 @@ Rigidbody2D:
 Transform:
   m_PrefabParentObject: {fileID: 465374, guid: 898784bd1aea35745bbbc62ebd467f14, type: 2}
   m_PrefabInternal: {fileID: 1113950834}
+--- !u!1 &405535569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 405535573}
+  - 114: {fileID: 405535572}
+  - 82: {fileID: 405535571}
+  - 114: {fileID: 405535570}
+  m_Layer: 0
+  m_Name: SounManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &405535570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405535569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01186029a73844fb6ba2c54a3ee95de4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  musicTempo: {fileID: 0}
+--- !u!82 &405535571
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405535569}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &405535572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405535569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b50a130ea5ec514bbc70f3e252bbf94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempo: 2000
+  tolerance: 250
+--- !u!4 &405535573
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405535569}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -143.80756, y: 30.44572, z: 44.943382}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!4 &568784645 stripped
 Transform:
   m_PrefabParentObject: {fileID: 420986, guid: 5fbb2f6996acafe40b91dd53474a6c6e, type: 2}
@@ -210,7 +346,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 437226, guid: 2c749661261b3d0478566663e75f3a5a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -32
+      value: -34
       objectReference: {fileID: 0}
     - target: {fileID: 437226, guid: 2c749661261b3d0478566663e75f3a5a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -979,7 +1115,7 @@ MonoBehaviour:
   - {fileID: 11424546, guid: f452e6bf786818140a4c450e8783476a, type: 2}
   - {fileID: 11499454, guid: fcc27d6d4bc95d84b8669c168e233d00, type: 2}
   - {fileID: 11477624, guid: 5fbb2f6996acafe40b91dd53474a6c6e, type: 2}
-  backgroundSegmentsWidth: 15
+  backgroundSegmentsWidth: 13
   background: {fileID: 1308846193}
   tileLength: 1
 --- !u!4 &1996093001

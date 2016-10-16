@@ -31,7 +31,7 @@ public class MapManager : Singleton<MapManager> {
 	{
 		int randomIndex = Random.Range (0, MapManager.Instance.backgroundSegments.Length);
 
-		Vector3 aimedPosition = new Vector3 (exitingSegmentPosition.x + (6*MapManager.Instance.levelSegmentsWidth), exitingSegmentPosition.y, exitingSegmentPosition.z);
+		Vector3 aimedPosition = new Vector3 (exitingSegmentPosition.x + (6*MapManager.Instance.backgroundSegmentsWidth), exitingSegmentPosition.y, exitingSegmentPosition.z);
 
 		BackgroundSegmentController newBackgroundSegment = (BackgroundSegmentController) Instantiate (MapManager.Instance.backgroundSegments [randomIndex], aimedPosition, Quaternion.identity);
 
