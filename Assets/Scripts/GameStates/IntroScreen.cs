@@ -19,7 +19,7 @@ namespace GameState
             if(Input.anyKeyDown)
             {
                 SoundManager.Instance.StopMusic();
-			context.TitleScreen.SetActive (false);
+				_context.TitleScreen.SetActive (false);
                 _machine.changeState<PreGame>();
             }
         }
