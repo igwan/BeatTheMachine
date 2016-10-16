@@ -2650,7 +2650,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathScream: {fileID: 8300000, guid: abde1714ff5db4b61a945ff11a22537d, type: 3}
   gameOver: {fileID: 8300000, guid: 9940645fe385242b1a162f1cdd930df5, type: 3}
-  titleScreen: {fileID: 8300000, guid: 3392cfa444b1d43aea42252cab45666b, type: 3}
+  titleScreenAnnounce: {fileID: 8300000, guid: 3392cfa444b1d43aea42252cab45666b, type: 3}
+  titleScreenMusic: {fileID: 8300000, guid: f471a19af4a91417da5c2d191ec1746b, type: 3}
   mainTheme: {fileID: 8300000, guid: 216879ef5e9774e2e8b5c9ab7b09a059, type: 3}
   musicSource: {fileID: 405535574}
   FXSource: {fileID: 405535571}
@@ -2754,7 +2755,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!82 &405535574
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9181,6 +9182,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 165798, guid: 1cd6aef217e1f84479cb0cdebbe2ff12, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1cd6aef217e1f84479cb0cdebbe2ff12, type: 2}
   m_IsPrefabParent: 0
@@ -11489,9 +11494,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelSegments:
-  - {fileID: 11489708, guid: 898784bd1aea35745bbbc62ebd467f14, type: 2}
-  - {fileID: 11407140, guid: 7b07264317877164586d89cc1e14634d, type: 2}
   - {fileID: 11498198, guid: 2bc5d2f23cb6fc94bb92cd99afbedb89, type: 2}
+  - {fileID: 11407140, guid: 7b07264317877164586d89cc1e14634d, type: 2}
+  - {fileID: 11447112, guid: f053d7dfaf5854c4e9262f11de763eeb, type: 2}
   levelSegmentsWidth: 10
   backgroundSegments:
   - {fileID: 11447368, guid: 2c749661261b3d0478566663e75f3a5a, type: 2}
