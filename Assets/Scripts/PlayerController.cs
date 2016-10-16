@@ -99,6 +99,16 @@ public class PlayerController : MonoBehaviour
         vulnerability = true;
     }
 
+	void FixedUpdate()
+	{
+		if (this.mustMove ()) 
+		{
+			this.MoveToTarget ();
+		}
+
+		Walk ();
+	}
+
 //	void FixedUpdate(){
 //		if (!vulnerability) {
 //			this.TimerInvulnerability -= Time.deltaTime;
