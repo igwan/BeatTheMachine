@@ -20,11 +20,11 @@ public class RobotManager : MonoBehaviour {
 		}
 	}
 
-	void addRobot(GameObject robot){
+	public void addRobot(GameObject robot){
 		robots.Add (robot, robot.GetComponent<Animator> ());
 	}
 
-	void deleteRobot(GameObject robot){
+	public void deleteRobot(GameObject robot){
 		robots.Remove (robot);
 		Destroy (robot);
 	}

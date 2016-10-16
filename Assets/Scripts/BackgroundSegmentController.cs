@@ -8,7 +8,7 @@ public class BackgroundSegmentController : MonoBehaviour {
 	{
 		if (collidingObject.CompareTag ("CameraBackgroundCollider")) 
 		{
-			Debug.Log ("OnTriggerExit");
+			//Debug.Log ("OnTriggerExit");
 			mapManager.AddNextBackgroundSegment (transform.localPosition);
 			Destroy (gameObject);
 		}

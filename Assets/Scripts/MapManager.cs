@@ -12,14 +12,24 @@ public class MapManager : Singleton<MapManager>
 
 	public LevelSegmentController[] levelSegments;
 	public float levelSegmentsWidth = 10;
-	public GameObject foreground;
+	//public GameObject foreground;
 
 	public BackgroundSegmentController[] backgroundSegments;
 	public float backgroundSegmentsWidth = 15;
-	public GameObject background;
+	//public GameObject background;
+
+	public GameObject CrowdRobotPrefab;
+	private RobotManager robotManager;
+	public float distanceBetweenCrowdRobots = 0.5f;
+
 
 
 	public float tileLength = 1 ;
+
+	public void Start()
+	{
+		robotManager = GameObject.Find ("RobotCrowd").GetComponent<RobotManager> ();
+	}
 
 	public void AddNextLevelSegment(Vector3 exitingSegmentPosition)
 	{
@@ -41,5 +51,16 @@ public class MapManager : Singleton<MapManager>
 		BackgroundSegmentController newBackgroundSegment = (BackgroundSegmentController) Instantiate (MapManager.Instance.backgroundSegments [randomIndex], aimedPosition, Quaternion.identity);
 
 		//newBackgroundSegment.transform.parent = background.transform;
+	}
+
+	public void AddNextCrowdRobot(Vector3 exitingSegmentPosition, Transform parent)
+	{
+		Vector3 aimedPosition = new Vector3 (exitingSegmentPosition.x + (82*MapManager.Instance.distanceBetweenCrowdRobots), exitingSegmentPosition.y, exitingSegmentPosition.z);
+
+		GameObject newRobot = (GameObject)Instantiate (CrowdRobotPrefab, aimedPosition, Quaternion.identity) ;
+
+		robotManager.addRobot (newRobot);
+
+		newRobot.transform.parent = parent;
 	}
 }
