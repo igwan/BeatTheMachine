@@ -1,7 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using System.Collections;
 
-public class MapManager : Singleton<MapManager> {
+public class MapManager : Singleton<MapManager>
+{
+    // maybe set a max segment count and call EndLevel when reached
+    public class EndLevelEvent : UnityEvent {};
+    public EndLevelEvent EndLevel = new EndLevelEvent();
 
 	Camera camera;
 

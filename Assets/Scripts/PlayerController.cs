@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public class DeathEvent : UnityEvent {};
     public DeathEvent Die = new DeathEvent();
 
+    int defaultHealth = 1;
     int health = 1;
 
     [SerializeField] bool godMode;
@@ -48,6 +49,11 @@ public class PlayerController : MonoBehaviour
 		this.distance = MapManager.Instance.tileLength;
 		targetPosition = this.transform.position;
 	}
+
+    public void Reset()
+    {
+        health = defaultHealth;
+    }
 
 	//
 	public void Walk(){
@@ -149,6 +155,11 @@ public class PlayerController : MonoBehaviour
 		}
     }
 
+    public void Death()
+    {
+        health = 0;
+        Hit();
+    }
 
 	private bool mustMove(){
 		return this.transform.position != this.targetPosition;

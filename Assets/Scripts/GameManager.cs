@@ -6,6 +6,8 @@ using Prime31.StateKit;
 public class GameManager : Singleton<GameManager>
 {
     public GameObject GameOverUI;
+    public GameObject WinUI;
+
     public float postGameDuration = 3;
     public PlayerController player;
 
