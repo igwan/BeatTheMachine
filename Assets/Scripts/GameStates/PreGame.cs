@@ -10,6 +10,7 @@ namespace GameState
         #if DEBUG
             Debug.Log("PreGame start");
         #endif
+            _context.player.Reset();
             // wait a little before
             _machine.changeState<Game>();
         }
