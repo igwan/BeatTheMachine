@@ -6,6 +6,9 @@ using System.Collections;
 [RequireComponent(typeof(ProximityScanner))]
 public class PlayerController : MonoBehaviour
 {
+
+    bool dead = false;
+
 	private enum PlayerAction{
 		WALK,JUMP,DASH,IDLE,FALL,JUMP2
 	}
@@ -62,6 +65,7 @@ public class PlayerController : MonoBehaviour
     public void Reset()
     {
         health = defaultHealth;
+        dead = false;
     }
 
 	//
@@ -167,6 +171,9 @@ public class PlayerController : MonoBehaviour
 
     public void Death()
     {
+        if(dead)
+            return;
+        dead = true;
         SoundManager.Instance.PlaySound(SoundManager.Instance.deathScream);
         Die.Invoke();
     }
