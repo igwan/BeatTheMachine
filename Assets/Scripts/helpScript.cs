@@ -7,11 +7,16 @@ public class helpScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		SoundManager.Instance.musicTempo.AddBeginEvent (PopSprite);
+		SoundManager.Instance.musicTempo.AddEndEvent(DeleteSprite);
 		sprite = gameObject.GetComponent<SpriteRenderer> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void DeleteSprite(){
+		sprite.enabled = false;
+	}
+
+	void PopSprite(){
+		sprite.enabled = true;
 	}
 }
