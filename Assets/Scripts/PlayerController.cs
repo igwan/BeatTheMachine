@@ -42,18 +42,19 @@ public class PlayerController : MonoBehaviour
 	//speed
 	public float speed = 1f ;
 
-    public float InvulnerabilityDuration = 1f;
+    public float InvulnerabilityDuration = 2f;
 
 	//distance between Tile 
 	private float distance ;
 
 	private Vector3 targetPosition ;
 
-	private bool vulnerability = true;
+	private bool vulnerability = false;
 
 	void Start(){
 		this.distance = MapManager.Instance.tileLength;
 		targetPosition = this.transform.position;
+		StartCoroutine (StopInvulnerability ());
 	}
 
     public void Reset()
@@ -210,7 +211,7 @@ public class PlayerController : MonoBehaviour
 	}
 
    IEnumerator StopInvulnerability(){
-      yield return new WaitForSeconds(1f);
+      yield return new WaitForSeconds(2f);
       vulnerability = true;
    }
 

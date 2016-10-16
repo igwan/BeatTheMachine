@@ -7,6 +7,7 @@ public class GameManager : Singleton<GameManager>
 {
     public GameObject GameOverUI;
     public GameObject WinUI;
+	public GameObject TitleScreen;
 
     public float postGameDuration = 3;
     public PlayerController player;
@@ -36,6 +37,7 @@ public class GameManager : Singleton<GameManager>
         stateMachine.addState(new GameState.Game());
         stateMachine.addState(new GameState.Win());
         stateMachine.addState(new GameState.GameOver());
+		stateMachine.addState(new GameState.Restart());
     }
 
     public void SetSpeed(int speed)

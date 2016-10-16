@@ -1,5 +1,6 @@
 using UnityEngine;
 using Prime31.StateKit;
+using System.Collections;
 
 namespace GameState
 {
@@ -20,8 +21,15 @@ namespace GameState
         void gameOver()
         {
             _context.player.Die.RemoveListener(gameOver);
-            _machine.changeState<GameOver>();
-        }
+			_context.StartCoroutine (WaitAndGameOver ());
+		}
+
+		IEnumerator WaitAndGameOver()
+		{
+			yield return new WaitForSeconds (3f);
+			_machine.changeState<GameOver> ();
+		}
+
 
         void win()
         {

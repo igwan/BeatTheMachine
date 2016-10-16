@@ -19,7 +19,7 @@ namespace GameState
         {
             yield return new WaitForSeconds(waitTime);
             _context.GameOverUI.SetActive(false);
-            _machine.changeState<GameState.IntroScreen>();
+            _machine.changeState<GameState.Restart>();
         }
 
         public override void update(float deltaTime)
