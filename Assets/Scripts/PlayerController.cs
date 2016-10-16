@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
 
     int health = 1;
 
+    [SerializeField] bool godMode;
 
     void Awake()
     {
@@ -133,11 +134,11 @@ public class PlayerController : MonoBehaviour
     public void Hit() {
 		//Launch Animation
 		if (vulnerability) {
-			Debug.Log ("Hit");
+			//Debug.Log ("Hit");
 			animator.SetTrigger ("Hit");
 			health--;
 
-			if (health < 0) {
+			if (health < 0 && !godMode) {
 				Die.Invoke ();
 			}
             else
