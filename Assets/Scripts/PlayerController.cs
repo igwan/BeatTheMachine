@@ -155,6 +155,11 @@ public class PlayerController : MonoBehaviour
 		}
     }
 
+    public void Death()
+    {
+        health = 0;
+        Hit();
+    }
 
 	private bool mustMove(){
 		return this.transform.position != this.targetPosition;

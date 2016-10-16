@@ -8,7 +8,7 @@ public class DeathTrigger : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             var player = other.gameObject.GetComponent<PlayerController>();
-            //player.Death();
+            player.Death();
         }
     }
 }
