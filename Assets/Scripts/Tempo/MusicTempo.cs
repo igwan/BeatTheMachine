@@ -76,8 +76,6 @@ public class MusicTempo : MonoBehaviour
 
 
 	//TOLERANCE
-	private bool toleranceDone;
-
 	private bool isInTolerance2 = false ;
 
 	private UnityEvent toleranceBeginEvent = new UnityEvent ();
@@ -94,7 +92,7 @@ public class MusicTempo : MonoBehaviour
 
 	public void toleranceBegin(){
 		if(!isInTolerance2 && (currentTempo < tolerance)){
-			Debug.Log ("debut");
+			//Debug.Log ("debut");
 			isInTolerance2 = true ;
 			this.toleranceBeginEvent.Invoke ();
 		}
@@ -102,7 +100,7 @@ public class MusicTempo : MonoBehaviour
 
 	public void toleranceEnd(){
 		if (isInTolerance2 && (tempo - currentTempo) > tolerance && !beforeKeyPoint) {
-			Debug.Log ("fin");
+			//Debug.Log ("fin");
             beforeKeyPoint = true;
 			isInTolerance2 = false;
 			this.toleranceEndEvent.Invoke ();
@@ -120,7 +118,6 @@ public class MusicTempo : MonoBehaviour
         {
 			nextTempoSlot ();
 			tempoKeyEvent.Invoke ();
-            toleranceDone = false;
 		}
 		toleranceBegin();
 		toleranceEnd ();

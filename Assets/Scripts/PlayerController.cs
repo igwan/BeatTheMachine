@@ -6,7 +6,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 	private enum PlayerAction{
-		STOP,WALK,JUMP,IDLE
+		STOP,WALK,JUMP,DASH,IDLE
 	}
 
 	private PlayerAction currentAction ;
@@ -62,9 +62,6 @@ public class PlayerController : MonoBehaviour
 		float startPointX = transform.position.x;
 		float startPointY = transform.position.y;
 
-		float endPointX = targetPosition.x;
-		float endPointY = targetPosition.y;
-
 		float controlPointX = transform.position.x;
 		float controlPointY = targetPosition.y;
 		bezierUtil.setCurve (startPointX, startPointY, controlPointX, controlPointY, targetPosition,transform.position.z,speed);
@@ -75,9 +72,11 @@ public class PlayerController : MonoBehaviour
 
     public void Dash()
     {
-        Debug.Log("Sprint");
+		targetPosition = transform.position + new Vector3(distance*2,0,0);
+        Debug.Log("Dash");
 		//Launch Animation
-		animator.SetTrigger("Sprint");
+		animator.SetTrigger("Dash");
+		currentAction = PlayerAction.DASH ;
     }
 
     public void Stop()
@@ -111,10 +110,14 @@ public class PlayerController : MonoBehaviour
 		return this.transform.position != this.targetPosition;
 	}
 
-	public void MoveToTarget(){
+	public void WalkToTarget(){
 		float step = speed * Time.deltaTime;
 		transform.position = Vector3.MoveTowards (transform.position, targetPosition, step);
+	}
 
+	public void DashToTarget(){
+		float step = speed * Time.deltaTime;
+		transform.position = Vector3.MoveTowards (transform.position, targetPosition, step);
 	}
 
    IEnumerator StopInvulnerability(){
@@ -125,11 +128,13 @@ public class PlayerController : MonoBehaviour
 	void FixedUpdate(){
 		if (this.mustMove ()) {
 			if (currentAction == PlayerAction.WALK)
-				this.MoveToTarget ();
+				this.WalkToTarget ();
 			else if (currentAction == PlayerAction.JUMP) {
 				this.transform.position = this.bezierUtil.UpdateCurve ();
-				if (!this.mustMove())
+				if (!this.mustMove ())
 					this.currentAction = PlayerAction.IDLE;
+			} else if (currentAction == PlayerAction.DASH) {
+				this.DashToTarget ();
 			}
 		}
 	}
