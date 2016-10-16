@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: ed16a29a449f0124ca123b82d8937d01
+timeCreated: 1476576399
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Armure_Dash_0
+    21300002: Armure_Dash_1
+    21300004: Armure_Dash_2
+    21300006: Armure_Dash_3
+    21300008: Armure_Dash_4
+    21300010: Armure_Dash_5
+    21300012: Armure_Dash_6
+    21300014: Armure_Dash_7
+    21300016: Armure_Dash_8
+    21300018: Armure_Dash_9
+    21300020: Armure_Dash_10
+    21300022: Armure_Dash_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Armure_Dash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 54}
+        - {x: -26, y: 27}
+        - {x: -29, y: 18}
+        - {x: -29, y: -10}
+        - {x: -19, y: -54}
+        - {x: 23, y: -54}
+        - {x: 23, y: 50}
+        - {x: 20, y: 54}
+    - name: Armure_Dash_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 54}
+        - {x: -26, y: 27}
+        - {x: -29, y: 18}
+        - {x: -29, y: -10}
+        - {x: -19, y: -54}
+        - {x: 23, y: -54}
+        - {x: 23, y: 50}
+        - {x: 20, y: 54}
+    - name: Armure_Dash_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 54}
+        - {x: -29, y: 19}
+        - {x: -29, y: -13}
+        - {x: -18, y: -54}
+        - {x: 28, y: -54}
+        - {x: 30, y: -45}
+        - {x: 30, y: 54}
+    - name: Armure_Dash_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 54}
+        - {x: -29, y: 19}
+        - {x: -29, y: -13}
+        - {x: -18, y: -54}
+        - {x: 28, y: -54}
+        - {x: 30, y: -45}
+        - {x: 30, y: 54}
+    - name: Armure_Dash_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 54}
+        - {x: -26, y: 27}
+        - {x: -29, y: 18}
+        - {x: -29, y: -9}
+        - {x: -18, y: -54}
+        - {x: 21, y: -54}
+        - {x: 29, y: -41}
+        - {x: 29, y: 32}
+        - {x: 26, y: 54}
+    - name: Armure_Dash_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 54}
+        - {x: -26, y: 27}
+        - {x: -29, y: 18}
+        - {x: -29, y: -9}
+        - {x: -18, y: -54}
+        - {x: 21, y: -54}
+        - {x: 29, y: -41}
+        - {x: 29, y: 32}
+        - {x: 26, y: 54}
+    - name: Armure_Dash_6
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 54}
+        - {x: -26, y: 31}
+        - {x: -26, y: -9}
+        - {x: -16, y: -54}
+        - {x: 26, y: -54}
+        - {x: 29, y: -46}
+        - {x: 29, y: 51}
+        - {x: 28, y: 54}
+    - name: Armure_Dash_7
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 54}
+        - {x: -26, y: 31}
+        - {x: -26, y: -9}
+        - {x: -16, y: -54}
+        - {x: 26, y: -54}
+        - {x: 29, y: -46}
+        - {x: 29, y: 51}
+        - {x: 28, y: 54}
+    - name: Armure_Dash_8
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: -2}
+        - {x: 26, y: 35}
+        - {x: 24, y: 54}
+        - {x: -11, y: 54}
+        - {x: -26, y: 39}
+        - {x: -26, y: -30}
+        - {x: -19, y: -54}
+        - {x: 26, y: -54}
+        - {x: 26, y: -25}
+        - {x: 23, y: -14}
+    - name: Armure_Dash_9
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 54}
+        - {x: -29, y: 24}
+        - {x: -29, y: -17}
+        - {x: -16, y: -54}
+        - {x: 23, y: -54}
+        - {x: 23, y: 54}
+    - name: Armure_Dash_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 54}
+        - {x: -29, y: 41}
+        - {x: -29, y: -27}
+        - {x: -24, y: -54}
+        - {x: 17, y: -54}
+        - {x: 23, y: -1}
+        - {x: 23, y: 34}
+        - {x: 20, y: 54}
+    - name: Armure_Dash_11
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 54}
+        - {x: -29, y: 41}
+        - {x: -29, y: -27}
+        - {x: -24, y: -54}
+        - {x: 17, y: -54}
+        - {x: 23, y: -1}
+        - {x: 23, y: 34}
+        - {x: 20, y: 54}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

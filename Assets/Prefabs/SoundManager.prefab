@@ -131,6 +131,7 @@ MonoBehaviour:
   Clips:
   - {fileID: 8300000, guid: 216879ef5e9774e2e8b5c9ab7b09a059, type: 3}
   musicTempo: {fileID: 0}
+
 --- !u!114 &114000010911401368
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -94,9 +94,6 @@ public class InputController : MonoBehaviour
         if(!Input.GetButtonDown(inputAction.button))
             return false;
 
-		Debug.Log (inputAction.button);
-
-
         if(actionHappenedThisTempoKey || !mTempo.isInTolerance())
         {
             playerController.Hit();
