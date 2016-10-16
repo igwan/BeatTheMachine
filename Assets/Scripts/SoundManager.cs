@@ -5,49 +5,44 @@ using System.Collections;
 [RequireComponent(typeof(MusicTempo))]
 public class SoundManager : Singleton<SoundManager>
 {
-    [SerializeField] AudioClip[] Clips;
+    public AudioClip deathScream;
+    public AudioClip gameOver;
+    public AudioClip titleScreen;
+    public AudioClip mainTheme;
 
     AudioClip nextClip;
 
-    AudioSource audioSource;
+    AudioSource musicSource;
+    AudioSource FXSource;
 
     [HideInInspector] public MusicTempo musicTempo;
 
     void Awake()
     {
         musicTempo = GetComponent<MusicTempo>();
-        audioSource = GetComponent<AudioSource>();
-        SetSpeed(0);
+        musicSource = gameObject.AddComponent<AudioSource>();
+        FXSource = gameObject.AddComponent<AudioSource>();
     }
 
-    public void StartGameMusic()
+    public void PlaySound(AudioClip clip)
     {
-        if(nextClip == null)
-            return;
-
-        audioSource.clip = nextClip;
-        nextClip = null;
-
-        InvokeRepeating("Play", 0f, audioSource.clip.length);
+        FXSource.clip = clip;
+        FXSource.Play();
     }
 
-    public void SetSpeed(int speed)
+    public void StopSound()
     {
-        if(Clips.Length < speed + 1)
-            return;
-
-        nextClip = Clips[speed];
+        FXSource.Stop();
     }
 
-    void Play()
+    public void PlayMusic(AudioClip clip)
     {
-        if(nextClip != null)
-        {
-            CancelInvoke();
-            StartGameMusic();
-            return;
-        }
+        musicSource.clip = clip;
+        musicSource.Play();
+    }
 
-        audioSource.Play();
+    public void StopMusic()
+    {
+        musicSource.Stop();
     }
 }
