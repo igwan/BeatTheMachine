@@ -12,16 +12,14 @@ public class SoundManager : Singleton<SoundManager>
 
     AudioClip nextClip;
 
-    AudioSource musicSource;
-    AudioSource FXSource;
+    public AudioSource musicSource;
+    public AudioSource FXSource;
 
     [HideInInspector] public MusicTempo musicTempo;
 
     void Awake()
     {
         musicTempo = GetComponent<MusicTempo>();
-        musicSource = gameObject.AddComponent<AudioSource>();
-        FXSource = gameObject.AddComponent<AudioSource>();
     }
 
     public void PlaySound(AudioClip clip)
