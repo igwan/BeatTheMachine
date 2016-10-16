@@ -26,12 +26,18 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] bool godMode;
 
+
     void Awake()
     {
         animator = GetComponent<Animator>();
 		scanner = GetComponent<ProximityScanner> ();
     }
 
+
+
+	public void AddDeathEvent(UnityAction action){
+		this.Die.AddListener (action);
+	}
 
 	//speed
 	public float speed = 1f ;
