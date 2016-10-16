@@ -7,7 +7,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 	private enum PlayerAction{
-		WALK,JUMP,DASH,IDLE,FALL
+		WALK,JUMP,DASH,IDLE,FALL,JUMP2
 	}
 
 	private PlayerAction currentAction = PlayerAction.IDLE ;
@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
 	//
 	public void Walk(){
-		if (!scanner.SomethingFront() && scanner.SomethingFrontDown()) {
+		if (!scanner.SomethingFront() && currentAction == PlayerAction.IDLE) {
 			//set Objectif 
 			targetPosition = transform.position + new Vector3 (distance, 0, 0);
 			//Launch Animation
@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
 
     public void Jump()
     {
-		if (!scanner.SomethingUp () && !scanner.SomethingUpFront()) {
+		if (!scanner.SomethingUp () && !scanner.SomethingUpFront() && currentAction == PlayerAction.IDLE) {
 			//setObjectif
 			targetPosition = transform.position + new Vector3 (distance, distance, 0);
 			float startPointX = transform.position.x;
@@ -101,13 +101,13 @@ public class PlayerController : MonoBehaviour
 		bezierUtil.setCurve (startPointX, startPointY, controlPointX, controlPointY, targetPosition, transform.position.z, speed);
 		//Launch Animation
 		animator.SetTrigger ("Fall");
-		currentAction = PlayerAction.JUMP;
+		currentAction = PlayerAction.JUMP2;
 }
 
 
     public void Dash()
     {
-		if (!scanner.SomethingFarFront () && scanner.SomethingFarDown ()) {
+		if (!scanner.SomethingFarFront ()  && currentAction == PlayerAction.IDLE) {
 			targetPosition = transform.position + new Vector3 (distance * 2, 0, 0);
 			Debug.Log ("Dash");
 			//Launch Animation
@@ -187,7 +187,7 @@ public class PlayerController : MonoBehaviour
 		this.transform.position = this.bezierUtil.UpdateCurve ();
 		if (!this.mustMove ()) { //si fin
 			if (mustFall ()) {
-				if (!scanner.SomethingFront () && !scanner.SomethingFrontDown())
+				if (!scanner.SomethingFront () && !scanner.SomethingFrontDown() && currentAction == PlayerAction.JUMP )
 					Jump2 ();
 				else
 					Fall ();
@@ -211,7 +211,7 @@ public class PlayerController : MonoBehaviour
 	void FixedUpdate(){
 		if (currentAction == PlayerAction.WALK) {
 			this.WalkToTarget ();
-		} else if (currentAction == PlayerAction.JUMP) {
+		} else if (currentAction == PlayerAction.JUMP || currentAction == PlayerAction.JUMP2) {
 			this.JumpToTarget ();
 		} else if (currentAction == PlayerAction.DASH) {
 			this.DashToTarget ();
