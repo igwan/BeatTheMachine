@@ -579,6 +579,8 @@ MonoBehaviour:
   levelSegments:
   - {fileID: 0}
   levelSegmentsWidth: 10
+  backgroundSegments: []
+  backgroundSegmentsWidth: 15
   tileLength: 1
 --- !u!114 &456318317
 MonoBehaviour:
@@ -933,7 +935,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5066324, guid: 898784bd1aea35745bbbc62ebd467f14, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 898784bd1aea35745bbbc62ebd467f14, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1443915701
@@ -1538,6 +1541,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   InvulnerabilityDuration: 1
+--- !u!114 &2046248286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2046248280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48f63238fd0b84b1683cc9f52abce582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2063075193
 Prefab:
   m_ObjectHideFlags: 0
