@@ -6,7 +6,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 	private enum PlayerAction{
-		STOP,WALK,JUMP,DASH,IDLE
+		STOP,WALK,JUMP,DASH,IDLE,FALL
 	}
 
 	private PlayerAction currentAction ;
@@ -86,6 +86,10 @@ public class PlayerController : MonoBehaviour
 		animator.SetTrigger("Stop");
 
     }
+
+	public void Fall(Vector3 target){
+		animator.SetTrigger ("Fall");
+	}
 
     public void Hit() {
 		//Launch Animation
