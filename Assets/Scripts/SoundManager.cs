@@ -36,6 +36,7 @@ public class SoundManager : Singleton<SoundManager>
 
     public void PlayMusic(AudioClip clip)
     {
+        StopMusic();
         musicSource.clip = clip;
         musicSource.Play();
     }
