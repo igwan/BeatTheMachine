@@ -10,7 +10,7 @@ public class ProximityScanner : MonoBehaviour
         tileLength = MapManager.Instance.tileLength;
     }
 
-    bool SomethingInDirection(Vector2 direction, int howManyTile = 1, Vector2? possibleOffset = null)
+    bool SomethingInDirection(Vector2 direction, float howManyTile = 1f, Vector2? possibleOffset = null)
     {
         Vector2 rayStart = transform.position;
         if(possibleOffset.HasValue)
@@ -22,10 +22,10 @@ public class ProximityScanner : MonoBehaviour
             #endif
         }
 
-        #if DEBUG
-            Debug.DrawRay(rayStart, direction * howManyTile, Color.red, 1);
-        #endif
         var distance = (direction * tileLength).magnitude * howManyTile;
+        #if DEBUG
+            Debug.DrawRay(rayStart, direction * distance, Color.red, 1);
+        #endif
         RaycastHit2D hit = Physics2D.Raycast(rayStart, direction, distance);
         return hit.collider != null;
     }
@@ -37,7 +37,7 @@ public class ProximityScanner : MonoBehaviour
 
     public bool SomethingFarFront()
     {
-        return SomethingInDirection(Vector2.right, 2);
+        return SomethingInDirection(Vector2.right, 1, Vector2.right);
     }
 
     public bool SomethingUp()
@@ -47,7 +47,7 @@ public class ProximityScanner : MonoBehaviour
 
     public bool SomethingUpFront()
     {
-        return SomethingInDirection(Vector2.one);
+        return SomethingInDirection(Vector2.one, 0.5f, Vector2.one * 0.5f);
     }
 
     public bool SomethingFront()
