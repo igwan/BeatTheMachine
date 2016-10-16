@@ -21,7 +21,7 @@ namespace GameState
             yield return new WaitForSeconds(waitTime);
             _context.GameOverUI.SetActive(false);
             SoundManager.Instance.StopSound();
-            _machine.changeState<GameState.Restart>();
+            _machine.changeState<Restart>();
         }
 
         public override void update(float deltaTime)

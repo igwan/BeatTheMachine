@@ -12,6 +12,7 @@ namespace GameState
             Debug.Log("Game start");
         #endif
 
+            GameManager.Instance.player.StartGame();
             SoundManager.Instance.musicTempo.enabled = true;
             SoundManager.Instance.PlayMusic(SoundManager.Instance.mainTheme);
             _context.player.Die.AddListener(gameOver);
