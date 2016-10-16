@@ -18,6 +18,8 @@ public class RobotManager : MonoBehaviour {
 		for (int i = 0; i < robotstab.Length; i++) {
 			robots.Add (robotstab [i], robotstab [i].GetComponent<Animator> ());
 		}
+
+		GameObject.Find ("Player").GetComponent<PlayerController> ().AddDeathEvent (robotsKill);
 	}
 
 	public void addRobot(GameObject robot){
