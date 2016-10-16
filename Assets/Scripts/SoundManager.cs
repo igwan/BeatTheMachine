@@ -7,7 +7,8 @@ public class SoundManager : Singleton<SoundManager>
 {
     public AudioClip deathScream;
     public AudioClip gameOver;
-    public AudioClip titleScreen;
+    public AudioClip titleScreenAnnounce;
+    public AudioClip titleScreenMusic;
     public AudioClip mainTheme;
 
     AudioClip nextClip;

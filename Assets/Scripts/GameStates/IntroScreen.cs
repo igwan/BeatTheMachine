@@ -1,5 +1,6 @@
 using UnityEngine;
 using Prime31.StateKit;
+using System.Collections;
 
 namespace GameState
 {
@@ -10,8 +11,15 @@ namespace GameState
         #if DEBUG
             Debug.Log("IntroScreen start");
         #endif
-			SoundManager.Instance.PlayMusic(SoundManager.Instance.titleScreen);
+			SoundManager.Instance.PlayMusic(SoundManager.Instance.titleScreenMusic);
+            _context.StartCoroutine(WaitAndAnnounce());
 			_context.TitleScreen.SetActive (true);
+        }
+
+        IEnumerator WaitAndAnnounce()
+        {
+            yield return new WaitForSeconds(1f);
+            SoundManager.Instance.PlaySound(SoundManager.Instance.titleScreenAnnounce);
         }
 
         public override void reason()

@@ -38,7 +38,10 @@ public class PlayerController : MonoBehaviour
 		scanner = GetComponent<ProximityScanner> ();
     }
 
-
+    public void StartGame()
+    {
+		StartCoroutine (StopInvulnerability ());
+    }
 
 	public void AddDeathEvent(UnityAction action){
 		this.Die.AddListener (action);
@@ -59,7 +62,6 @@ public class PlayerController : MonoBehaviour
 	void Start(){
 		this.distance = MapManager.Instance.tileLength;
 		targetPosition = this.transform.position;
-		StartCoroutine (StopInvulnerability ());
 	}
 
     public void Reset()
