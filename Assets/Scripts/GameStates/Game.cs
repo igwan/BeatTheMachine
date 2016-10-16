@@ -13,7 +13,7 @@ namespace GameState
         #endif
 
             SoundManager.Instance.musicTempo.enabled = true;
-            SoundManager.Instance.StartGameMusic();
+            SoundManager.Instance.PlayMusic(SoundManager.Instance.mainTheme);
             _context.player.Die.AddListener(gameOver);
             MapManager.Instance.EndLevel.AddListener(win);
         }

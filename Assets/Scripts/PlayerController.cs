@@ -152,7 +152,7 @@ public class PlayerController : MonoBehaviour
 			health--;
 
 			if (health < 0 && !godMode) {
-				Die.Invoke ();
+                Death();
 			}
             else
             {
@@ -164,8 +164,8 @@ public class PlayerController : MonoBehaviour
 
     public void Death()
     {
-        health = 0;
-        Hit();
+        SoundManager.Instance.PlaySound(SoundManager.Instance.deathScream);
+        Die.Invoke();
     }
 
 	private bool mustMove(){

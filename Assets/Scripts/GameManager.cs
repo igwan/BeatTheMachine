@@ -43,6 +43,5 @@ public class GameManager : Singleton<GameManager>
     public void SetSpeed(int speed)
     {
         gameSpeed = speed;
-        SoundManager.Instance.SetSpeed(speed);
     }
 }
