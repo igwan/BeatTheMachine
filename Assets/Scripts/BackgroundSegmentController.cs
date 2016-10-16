@@ -4,13 +4,12 @@ using System.Collections;
 public class BackgroundSegmentController : MonoBehaviour {
 	public MapManager mapManager;
 
-	/*void OnTriggerExit2D(Collider2D collidingObject)
+	void OnTriggerExit2D(Collider2D collidingObject)
 	{
-		if (collidingObject.CompareTag ("MainCamera")) 
+		if (collidingObject.CompareTag ("CameraBakgroundCollider")) 
 		{
-			mapManager.AddNextLevelSegment (transform.localPosition);
-			Destroy (this);
+			mapManager.AddNextBackgroundSegment (transform.localPosition);
+			Destroy (gameObject);
 		}
 	}
-*/
 }
