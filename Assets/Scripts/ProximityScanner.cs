@@ -10,30 +10,68 @@ public class ProximityScanner : MonoBehaviour
         tileLength = MapManager.Instance.tileLength;
     }
 
-    bool SomethingInDirection(Vector2 direction)
+
+    bool SomethingInDirection(Vector2 direction, int howManyTile = 1, Vector2? possibleOffset = null)
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, (direction * tileLength).magnitude);
+        Vector2 offset;
+        if(possibleOffset.HasValue)
+            offset = possibleOffset.Value;
+        else
+            offset = Vector2.zero;
+
+        RaycastHit2D hit = Physics2D.Raycast(
+                (Vector2)transform.position + (offset * tileLength),
+                direction,
+                (direction * tileLength).magnitude * howManyTile
+        );
         return hit.collider != null;
+    }
+
+    public bool SomethingFarDown()
+    {
+        return SomethingInDirection(new Vector2(1, -1), 1, Vector2.right);
+    }
+
+    public bool SomethingFarFront()
+    {
+        return SomethingInDirection(Vector2.right, 2);
     }
 
     public bool SomethingUp()
     {
-        return SomethingInDirection(Vector2.up * tileLength);
+        return SomethingInDirection(Vector2.up);
     }
 
     public bool SomethingUpFront()
     {
-        return SomethingInDirection(Vector2.one * tileLength);
+        return SomethingInDirection(Vector2.one);
     }
 
     public bool SomethingFront()
     {
-        return SomethingInDirection(Vector2.right * tileLength);
+        return SomethingInDirection(Vector2.right);
     }
 
-    public bool SomethingDownFront()
+    public bool SomethingDown()
     {
-        return SomethingInDirection(Vector2.down * tileLength);
+        return SomethingInDirection(Vector2.down);
+    }
+
+    public bool SomethingFrontDown()
+    {
+        return SomethingInDirection(new Vector2(1, -1));
+    }
+
+    [ContextMenu("DebugSomethingFarDown")]
+    void DebugSomethingFarDown()
+    {
+        Debug.Log(SomethingFarDown());
+    }
+
+    [ContextMenu("DebugSomethingFarFront")]
+    void DebugSomethingFarFront()
+    {
+        Debug.Log(SomethingFarFront());
     }
 
     [ContextMenu("DebugSomethingUp")]
@@ -54,9 +92,15 @@ public class ProximityScanner : MonoBehaviour
         Debug.Log(SomethingFront());
     }
 
-    [ContextMenu("DebugSomethingDownFront")]
-    void DebugSomethingDownFront()
+    [ContextMenu("DebugSomethingDown")]
+    void DebugSomethingDown()
     {
-        Debug.Log(SomethingDownFront());
+        Debug.Log(SomethingDown());
+    }
+
+    [ContextMenu("DebugSomethingFrontDown")]
+    void DebugSomethingFrontDown()
+    {
+        Debug.Log(SomethingFrontDown());
     }
 }
