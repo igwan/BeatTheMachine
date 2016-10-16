@@ -28,8 +28,6 @@ public class SoundManager : Singleton<SoundManager>
         audioSource.clip = nextClip;
         nextClip = null;
 
-		musicTempo.startTempo ();
-
         InvokeRepeating("Play", 0f, audioSource.clip.length);
     }
 
