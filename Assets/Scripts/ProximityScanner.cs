@@ -10,20 +10,19 @@ public class ProximityScanner : MonoBehaviour
         tileLength = MapManager.Instance.tileLength;
     }
 
-
     bool SomethingInDirection(Vector2 direction, int howManyTile = 1, Vector2? possibleOffset = null)
     {
-        Vector2 offset;
+        Vector2 rayStart = transform.position;
         if(possibleOffset.HasValue)
-            offset = possibleOffset.Value;
-        else
-            offset = Vector2.zero;
+        {
+            var offset = possibleOffset.Value;
+            rayStart = (Vector2)transform.position + (offset * tileLength);
+            Debug.DrawLine(transform.position, rayStart, Color.cyan, 1);
+        }
 
-        RaycastHit2D hit = Physics2D.Raycast(
-                (Vector2)transform.position + (offset * tileLength),
-                direction,
-                (direction * tileLength).magnitude * howManyTile
-        );
+        Debug.DrawRay(rayStart, direction * howManyTile, Color.red, 1);
+        var distance = (direction * tileLength).magnitude * howManyTile;
+        RaycastHit2D hit = Physics2D.Raycast(rayStart, direction, distance);
         return hit.collider != null;
     }
 
