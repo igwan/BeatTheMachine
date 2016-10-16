@@ -17,10 +17,14 @@ public class ProximityScanner : MonoBehaviour
         {
             var offset = possibleOffset.Value;
             rayStart = (Vector2)transform.position + (offset * tileLength);
-            Debug.DrawLine(transform.position, rayStart, Color.cyan, 1);
+            #if DEBUG
+                Debug.DrawLine(transform.position, rayStart, Color.cyan, 1);
+            #endif
         }
 
-        Debug.DrawRay(rayStart, direction * howManyTile, Color.red, 1);
+        #if DEBUG
+            Debug.DrawRay(rayStart, direction * howManyTile, Color.red, 1);
+        #endif
         var distance = (direction * tileLength).magnitude * howManyTile;
         RaycastHit2D hit = Physics2D.Raycast(rayStart, direction, distance);
         return hit.collider != null;
