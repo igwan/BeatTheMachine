@@ -26,6 +26,7 @@ public class SoundManager : Singleton<SoundManager>
             return;
 
         audioSource.clip = nextClip;
+        nextClip = null;
 
         InvokeRepeating("Play", 0f, audioSource.clip.length);
     }
